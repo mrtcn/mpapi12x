@@ -1,0 +1,20 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+<div class="row">
+    <div class="col-md-12">
+        <div id="grid"
+             data-role="extendedgrid"
+             data-controllername="culture"
+             data-create="true"
+             data-create-url="/dashboard/culture/create"
+             data-edit="true"
+             data-update-url="/dashboard/culture/update"
+             data-delete="true"
+             data-remove-url="/dashboard/culture/remove"
+             data-export="true"
+             data-read-url="/dashboard/culture/list">            
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Areas/Dashboard/Assets/dist/js/dashboard/culture.js"></script>
+}

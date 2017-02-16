@@ -1,0 +1,42 @@
+﻿@model ActorMovieViewModel
+
+    @using(Html.BeginForm("CreateOrUpdate", ControllerName, FormMethod.Post, new { @class="form-horizontal", data_validate="true", enctype="multipart/form-data"})) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Aktörün Rol Adı *</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.CharacterName, new { @class = "form-control input-sm", data_rule_required = "true", maxlength = 50 })
+                @Html.CustomValidationMessageFor(x => x.CharacterName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Durum</label>
+            <div class="col-md-1">
+                @Html.EditorFor(x => x.Status, new { value = Model.Status, label = "Durum" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Film Seçiniz</label>
+            <div class="col-md-4">
+                @Html.DropDownListFor(x => x.MovieId, Model.MovieSelectList, "Seçiniz", new { @class = "form-control input-sm" })
+            </div>
+
+        </div>
+
+        @Html.FormSubmitGroup()
+        @Html.HiddenFor(x => x.Id)
+        @Html.HiddenFor(x => x.ActorId)
+    }
+@section scripts{
+    <script>
+        $(function() {
+            $('#MovieId').kendoDropDownList({
+                filter: "contains"
+            }).data("kendoDropDownList");
+        });
+
+    </script>
+}

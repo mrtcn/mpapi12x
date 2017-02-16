@@ -1,0 +1,20 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+<div class="row">
+    <div class="col-md-12">
+        <div id="grid"
+             data-role="extendedgrid"
+             data-controllername="city"
+             data-create="true"
+             data-create-url="/dashboard/city/create"
+             data-edit="true"
+             data-update-url="/dashboard/city/update"
+             data-delete="true"
+             data-remove-url="/dashboard/city/remove"
+             data-export="true"
+             data-read-url="/dashboard/city/list">            
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Areas/Dashboard/Assets/dist/js/dashboard/city.js"></script>
+}

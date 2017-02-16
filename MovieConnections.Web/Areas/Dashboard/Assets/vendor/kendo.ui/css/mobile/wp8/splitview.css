@@ -1,0 +1,1437 @@
+/* SplitView */
+/* line 2, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-splitview > .km-content {
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+/* line 9, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-vertical > .km-content {
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 15, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-content > .km-pane {
+  -moz-box-flex: 2;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  width: auto;
+  height: auto;
+}
+/* line 22, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-content > .km-pane:first-child {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* line 27, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-horizontal > .km-content > .km-pane {
+  top: 0;
+  bottom: 0;
+}
+/* line 34, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-vertical > .km-content > .km-pane > .km-view {
+  display: -webkit-box;
+}
+/* Common Platform CSS */
+@-ms-viewport {
+  width: device-width;
+  user-zoom: fixed;
+  max-zoom: 1;
+  min-zoom: 1;
+}
+@media (orientation: landscape) {
+  /* line 14, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-tablet .km-on-ios.km-horizontal.km-web:not(.km-ios-chrome) {
+    position: fixed;
+    bottom: 0;
+  }
+}
+/* line 20, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root {
+  font-size: .92em;
+}
+/* line 25, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root a {
+  color: inherit;
+}
+/* line 30, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-tablet {
+  font-size: 1em;
+}
+/* line 35, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root *:focus {
+  outline-width: 0;
+}
+/* line 40, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root,
+.km-pane,
+.km-pane-wrapper {
+  width: 100%;
+  height: 100%;
+  -ms-touch-action: none;
+  -ms-content-zooming: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  overflow-x: hidden;
+}
+/* line 54, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-pane-wrapper {
+  position: absolute;
+}
+/* line 58, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-pane,
+.km-shim {
+  font-family: sans-serif;
+}
+/* line 64, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-pane {
+  overflow-x: hidden;
+  position: relative;
+}
+/* line 73, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-vertical .km-collapsible-pane {
+  position: absolute;
+  z-index: 2 !important;
+  -webkit-transition: -webkit-transform 350ms ease-out;
+  -ms-transition: -ms-transform 350ms ease-out;
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 81, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-vertical .km-expanded-splitview .km-collapsible-pane {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 85, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-expanded-pane-shim {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* line 94, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-expanded-splitview .km-expanded-pane-shim {
+  display: block;
+  z-index: 1;
+}
+/* line 99, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root > * {
+  margin: 0;
+  padding: 0;
+}
+/* line 105, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 111, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-content {
+  display: block;
+}
+/* line 116, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-view,
+.km-split-content {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+  vertical-align: top;
+}
+/* line 132, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.k-ff .km-view,
+.k-ff .km-pane {
+  overflow: hidden;
+}
+/* line 138, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.k-ff18 .km-view,
+.k-ff18 .km-pane,
+.k-ff19 .km-view,
+.k-ff19 .km-pane,
+.k-ff20 .km-view,
+.k-ff20 .km-pane,
+.k-ff21 .km-view,
+.k-ff21 .km-pane {
+  position: relative;
+}
+/* line 146, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.k-ff .km-view {
+  display: -moz-inline-box;
+  display: inline-flex;
+}
+/* line 152, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-content {
+  min-height: 1px;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -moz-box-align: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  flex-align: stretch;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+/* line 162, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-content p,
+.km-content h1,
+.km-content h2,
+.km-content h3,
+.km-content h4,
+.km-content h5,
+.km-content h6 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/* line 169, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-header,
+.km-footer {
+  display: block;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  width: 100%;
+}
+/* line 178, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-header {
+  padding: 0;
+}
+/* line 183, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-footer {
+  background: #1a1a1a;
+}
+/* line 188, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+[data-role="layout"] {
+  display: none;
+}
+/* line 193, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+[data-role="view"],
+[data-role="drawer"] {
+  visibility: hidden;
+}
+/* line 198, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-view {
+  visibility: visible;
+}
+/* line 203, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-header,
+.km-footer {
+  position: relative;
+  z-index: 1;
+}
+@media all and (-webkit-min-device-pixel-ratio: 10000), not all and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 213, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-view {
+    display: table;
+  }
+  /* line 214, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-header,
+  .km-footer,
+  .km-content {
+    display: table-row;
+  }
+  /* line 215, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-header,
+  .km-footer {
+    height: 1px;
+  }
+}
+/* line 218, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root .k-toolbar,
+.km-navbar,
+.km-button,
+.km-buttongroup,
+.km-tabstrip,
+.km-blackberry li.km-actionsheet-cancel > a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-origin: border-box;
+  position: relative;
+  display: inline-block;
+  padding: .4em .7em;
+  margin: .1rem;
+  overflow: visible;
+  text-decoration: none;
+}
+/* line 237, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-tabstrip,
+.km-root .k-toolbar,
+.km-navbar {
+  display: block;
+  padding: .8em;
+  margin: 0;
+  width: 100%;
+  border-width: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 249, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scroller {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-touch-action: pan-x pan-y;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-scroll-snap-type: proximity;
+}
+/* line 258, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-default-content {
+  padding: 1em;
+}
+/* line 263, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-shim {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10001;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 275, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root .km-shim {
+  position: absolute;
+}
+/* line 279, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-shim:before {
+  content: "\a0";
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 288, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-shim .k-animation-container {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0;
+  width: auto;
+}
+/* Loader */
+/* line 297, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader {
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 130px;
+  z-index: 100000;
+  padding: 30px 30px;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -90px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 312, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader h1 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 320, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader .km-loading,
+.km-load-more .km-icon,
+.km-scroller-refresh .km-icon {
+  animation: km-spin 1s infinite linear;
+  -moz-animation: km-spin 1s infinite linear;
+  -webkit-animation: km-spin 1s infinite linear;
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+}
+/* line 332, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader .km-loading:after,
+.km-load-more .km-icon:after {
+  color: #ccc;
+}
+/* line 338, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loading-left,
+.km-loading-right {
+  display: none;
+}
+@-webkit-keyframes km-spin {
+  /* line 346, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 347, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes km-spin {
+  /* line 352, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 353, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes km-spin {
+  /* line 358, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  /* line 359, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes km-spin {
+  /* line 364, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -o-transform: rotate(0deg);
+  }
+  /* line 365, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes km-ios-spin {
+  /* line 370, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 371, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes km-ios-spin1 {
+  /* line 376, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -webkit-transform: rotate(-135deg);
+  }
+  /* line 377, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -webkit-transform: rotate(225deg);
+  }
+}
+@-moz-keyframes km-ios-spin {
+  /* line 382, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 383, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes km-ios-spin1 {
+  /* line 388, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -moz-transform: rotate(-135deg);
+  }
+  /* line 389, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -moz-transform: rotate(225deg);
+  }
+}
+@keyframes km-ios-spin {
+  /* line 394, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    transform: rotate(0deg);
+  }
+  /* line 395, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes km-ios-spin1 {
+  /* line 400, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    transform: rotate(-135deg);
+  }
+  /* line 401, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    transform: rotate(225deg);
+  }
+}
+/* Stretched View */
+/* line 407, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-stretched-view {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 412, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-stretched-view > * {
+  width: 100%;
+}
+/* line 417, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 100000;
+}
+/* line 428, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root.km-native-scrolling,
+.km-root.km-native-scrolling .km-view,
+.km-root.km-native-scrolling .km-splitview .km-pane {
+  min-height: 100%;
+  height: auto;
+  -webkit-transform: none;
+  overflow-x: visible;
+}
+/* line 438, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-pane,
+.km-native-scrolling .km-view {
+  -ms-touch-action: auto;
+  display: block;
+}
+/* line 445, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-content {
+  -ms-flex: auto;
+}
+/* line 450, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-blackberry .km-content {
+  min-height: auto;
+}
+/* Restore position:absolute during animation */
+/* line 456, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-splitview {
+  position: absolute;
+}
+/* line 461, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-header {
+  position: fixed;
+  top: 0;
+}
+/* line 467, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-android .km-header {
+  top: auto;
+  bottom: 0;
+}
+/* line 473, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-footer {
+  position: fixed;
+  bottom: 0;
+}
+/* line 479, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-android .km-footer {
+  top: 0;
+  bottom: auto;
+}
+/* line 485, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-badge {
+  z-index: auto;
+}
+/* line 490, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-splitview .km-header,
+.km-native-scrolling .km-splitview .km-footer,
+.km-native-scrolling .km-popup.km-pane .km-header,
+.km-native-scrolling .km-popup.km-pane .km-footer {
+  position: absolute;
+}
+/* line 498, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-modalview .km-header,
+.km-native-scrolling .km-modalview .km-footer {
+  position: relative;
+}
+/* line 504, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-content {
+  width: 100%;
+}
+/* line 509, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-shim,
+.km-native-scrolling .km-popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: auto !important;
+}
+/* line 518, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-drawer {
+  position: fixed;
+  top: 0;
+  height: 100% !important;
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 527, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling > .km-pane > .km-loader {
+  position: fixed;
+  top: 50%;
+  margin-top: -2em;
+}
+/* line 534, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-header,
+.km-native-scrolling .km-footer {
+  z-index: 2;
+}
+/* Disabled states */
+/* line 542, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-state-disabled {
+  opacity: 0.5;
+}
+/* line 6, base.less */
+.km-wp {
+  font-size: 1em;
+  font-family: 'Segoe WP', 'Segoe UI Symbol', 'Segoe UI', sans-serif;
+}
+/* line 11, base.less */
+.km-wp a {
+  text-decoration: none;
+}
+/* line 16, base.less */
+.km-wp .km-button,
+.km-root .km-wp .km-view .km-buttongroup .km-button {
+  border-style: solid;
+  border-width: .1em;
+  border-radius: 0;
+  line-height: 1em;
+  padding: .04em .5em .16em;
+}
+/* line 26, base.less */
+.km-root .km-wp .km-tabstrip .km-icon,
+.km-wp .km-scroller-pull .km-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 3.2em;
+  border-width: .08em;
+  border-style: solid;
+  border-radius: 5em;
+  margin-bottom: .2em;
+  padding: .1em;
+}
+/* line 39, base.less */
+.km-wp .km-scroller-pull .km-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 1.2em;
+}
+/* line 46, base.less */
+.km-wp .km-icon {
+  line-height: 1em;
+}
+/* line 51, base.less */
+.km-wp .km-icon:before {
+  margin-top: .08em;
+}
+/* line 56, base.less */
+.km-wp .km-icon:after {
+  margin-top: .04em;
+  vertical-align: middle;
+  height: 1em;
+}
+/* line 63, base.less */
+.km-wp .km-tabstrip .km-icon:after,
+.km-wp .km-tabstrip .km-icon:before {
+  margin-top: .02em;
+  margin-left: -0.05em;
+}
+/* line 70, base.less */
+.km-wp .km-tabstrip .km-icon:before {
+  margin-top: .06em;
+}
+/* Scroll hints */
+/* line 76, base.less */
+.km-wp .km-touch-scrollbar {
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 82, base.less */
+.km-wp .km-vertical-scrollbar {
+  width: 2px;
+}
+/* line 87, base.less */
+.km-wp .km-horizontal-scrollbar {
+  height: 2px;
+}
+/* line 92, base.less */
+.km-wp .km-scrollview,
+.km-wp .km-buttongroup {
+  overflow: hidden;
+}
+/* Orientation fallback */
+@media all and (orientation: landscape) {
+  /* line 101, base.less */
+  .km-root > .km-pane {
+    animation-name: -kendo-landscape;
+  }
+}
+/* Pull To Refresh */
+/* line 109, base.less */
+.km-wp .km-load-more,
+.km-wp .km-scroller-pull {
+  font-size: 1.2em;
+}
+/* DropDownList */
+/* line 117, base.less */
+.km-wp .km-popup {
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.6);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 127, base.less */
+.km-wp .km-popup .k-list-container {
+  width: 100% !important;
+  height: auto !important;
+  bottom: 0;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 138, base.less */
+.km-wp .km-actionsheet,
+.km-phone .km-wp .km-popup .k-list-container {
+  max-height: 80%;
+}
+/* line 144, base.less */
+.km-wp .km-popup li.k-state-hover {
+  color: inherit;
+}
+/* Loader */
+/* line 151, base.less */
+.km-wp .km-loader,
+.km-wp .km-loading-right,
+.km-wp .km-scroller-refresh {
+  display: block;
+  width: 100%;
+  height: 4em;
+  padding: 0;
+  top: 50%;
+  left: 0;
+  border-radius: 0;
+  border: 0;
+  margin: -2em 0 0;
+  font-size: 1.2em;
+  text-align: center;
+  vertical-align: middle;
+  line-height: .65rem;
+}
+/* line 170, base.less */
+.km-wp .km-loading-right {
+  position: absolute;
+  z-index: -1;
+}
+/* line 176, base.less */
+.km-wp .km-loader {
+  margin: 0;
+  top: 0;
+  height: 100%;
+  background: transparent;
+}
+/* line 184, base.less */
+.km-wp .km-scroller-refresh {
+  background: transparent;
+  height: 3em;
+  margin: 0;
+  width: 100%;
+  font-size: 1.2rem;
+}
+/* line 193, base.less */
+.km-load-more.km-scroller-refresh {
+  position: relative;
+}
+/* line 198, base.less */
+.km-wp .km-loader h1,
+.km-wp .km-scroller-refresh .km-template {
+  position: absolute;
+  display: none;
+  font-size: 1em;
+  width: 100%;
+  left: 0;
+  margin-left: 0;
+  top: 50%;
+}
+/* line 210, base.less */
+.km-wp .km-scroller-refresh .km-template {
+  left: 0;
+  margin-left: 0;
+  text-align: center;
+  width: 100%;
+}
+/* line 218, base.less */
+.km-wp .km-loader .km-loading,
+.km-wp .km-scroller-refresh .km-icon {
+  animation: none;
+  -moz-animation: none;
+  -webkit-animation: none;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0;
+}
+/* line 229, base.less */
+.km-wp .km-loader:before,
+.km-wp .km-loader:after,
+.km-wp .km-loader .km-loading,
+.km-wp .km-loader .km-loading:after,
+.km-wp .km-loader .km-loading:before,
+.km-wp .km-scroller-refresh:after,
+.km-wp .km-scroller-refresh:before,
+.km-wp .km-scroller-refresh .km-icon,
+.km-wp .km-scroller-refresh .km-icon:after,
+.km-wp .km-scroller-refresh .km-icon:before {
+  position: absolute;
+  display: inline-block;
+  content: "\a0";
+  top: 0;
+  left: 0;
+  border: 0;
+  width: 12em;
+  margin: 0;
+  padding: 0;
+  height: 0;
+  text-align: left;
+  font-family: "Kendo UI";
+  vertical-align: top;
+}
+/* line 255, base.less */
+.km-wp .km-scroller-refresh:after,
+.km-wp .km-scroller-refresh:before,
+.km-wp .km-scroller-refresh .km-icon,
+.km-wp .km-scroller-refresh .km-icon:after,
+.km-wp .km-scroller-refresh .km-icon:before {
+  width: 100%;
+}
+/* line 264, base.less */
+.km-wp .km-scroller-refresh:after,
+.km-wp .km-scroller-refresh:before,
+.km-wp .km-scroller-refresh .km-icon {
+  top: 46%;
+  font-size: .3em;
+}
+/* line 272, base.less */
+.km-wp .km-loader:before,
+.km-wp .km-loader:after,
+.km-wp .km-loader .km-loading {
+  left: 50%;
+  margin-left: -7em;
+  top: 50%;
+  font-size: .3em;
+  line-height: 0;
+}
+/* line 283, base.less */
+.km-wp .km-loader:before,
+.km-wp .km-loader:after,
+.km-wp .km-loader .km-loading:after,
+.km-wp .km-loader .km-loading:before,
+.km-wp .km-scroller-refresh:after,
+.km-wp .km-scroller-refresh:before,
+.km-wp .km-scroller-refresh .km-icon:after,
+.km-wp .km-scroller-refresh .km-icon:before {
+  opacity: 0;
+  height: .6em;
+  border-left: .7em solid;
+  animation: km-wpload 2s infinite linear;
+  -moz-animation: km-wpload 2s infinite linear;
+  -webkit-animation: km-wpload 2s infinite linear;
+}
+/* line 298, base.less */
+.km-wp .km-loader .km-loading:after,
+.km-wp .km-scroller-refresh .km-icon:after {
+  animation-delay: 0;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+}
+/* line 304, base.less */
+.km-wp .km-loader .km-loading:before,
+.km-wp .km-scroller-refresh .km-icon:before {
+  animation-delay: 0.3s;
+  -moz-animation-delay: 0.3s;
+  -webkit-animation-delay: 0.3s;
+}
+/* line 310, base.less */
+.km-wp .km-loader:before,
+.km-wp .km-scroller-refresh:before {
+  animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -webkit-animation-delay: 0.6s;
+}
+/* line 316, base.less */
+.km-wp .km-loader:after,
+.km-wp .km-scroller-refresh:after {
+  animation-delay: 0.9s;
+  -moz-animation-delay: 0.9s;
+  -webkit-animation-delay: 0.9s;
+}
+@keyframes km-wpload {
+  /* line 324, base.less */
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  /* line 325, base.less */
+  8% {
+    transform: translateX(30%);
+  }
+  /* line 326, base.less */
+  16% {
+    opacity: 1;
+  }
+  /* line 327, base.less */
+  34% {
+    opacity: 1;
+  }
+  /* line 328, base.less */
+  42% {
+    transform: translateX(70%);
+  }
+  /* line 329, base.less */
+  50% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  /* line 330, base.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes km-wpload {
+  /* line 335, base.less */
+  0% {
+    -moz-transform: translateX(0);
+    opacity: 0;
+  }
+  /* line 336, base.less */
+  8% {
+    -moz-transform: translateX(30%);
+  }
+  /* line 337, base.less */
+  16% {
+    opacity: 1;
+  }
+  /* line 338, base.less */
+  34% {
+    opacity: 1;
+  }
+  /* line 339, base.less */
+  42% {
+    -moz-transform: translateX(70%);
+  }
+  /* line 340, base.less */
+  50% {
+    -moz-transform: translateX(100%);
+    opacity: 0;
+  }
+  /* line 341, base.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes km-wpload {
+  /* line 346, base.less */
+  0% {
+    -webkit-transform: translateX(0);
+    opacity: 0;
+  }
+  /* line 347, base.less */
+  8% {
+    -webkit-transform: translateX(30%);
+  }
+  /* line 348, base.less */
+  16% {
+    opacity: 1;
+  }
+  /* line 349, base.less */
+  34% {
+    opacity: 1;
+  }
+  /* line 350, base.less */
+  42% {
+    -webkit-transform: translateX(70%);
+  }
+  /* line 351, base.less */
+  50% {
+    -webkit-transform: translateX(100%);
+    opacity: 0;
+  }
+  /* line 352, base.less */
+  100% {
+    opacity: 0;
+  }
+}
+/* line 355, base.less */
+.km-wp .km-content:not(.km-stretched-view) {
+  display: block;
+}
+/* Color Template */
+/* Variables */
+/* line 24, template.less */
+.km-wp,
+.km-wp .km-content,
+.km-wp .km-button {
+  background-color: Background;
+}
+/* line 31, template.less */
+.km-wp-dark-force,
+.km-wp-dark-force .km-content,
+.km-wp-dark-force .km-button {
+  background-color: #000000;
+}
+/* line 38, template.less */
+.km-wp-light-force,
+.km-wp-light-force .km-content,
+.km-wp-light-force .km-button {
+  background-color: #ffffff;
+}
+/* line 45, template.less */
+.km-wp-dark,
+.km-wp-dark a,
+.km-wp-dark .k-widget,
+.km-wp-dark .k-group,
+.km-wp-dark .k-content,
+.km-wp-dark .km-button,
+.km-wp-dark .km-load-more,
+.km-wp-dark .km-scroller-pull,
+.km-wp-dark .km-detail,
+.km-wp-dark .km-popup .km-item,
+.km-wp-dark .k-dropdown .k-dropdown-wrap {
+  color: #ffffff;
+}
+/* line 60, template.less */
+.km-wp-light,
+.km-wp-light a,
+.km-wp-light .k-widget,
+.km-wp-light .k-group,
+.km-wp-light .k-content,
+.km-wp-light .km-button,
+.km-wp-light .km-load-more,
+.km-wp-light .km-scroller-pull,
+.km-wp-light .km-detail,
+.km-wp-light .km-popup .km-item,
+.km-wp-light .k-dropdown .k-dropdown-wrap {
+  color: #000000;
+}
+/* line 75, template.less */
+.km-wp-dark .km-actionsheet-wrapper,
+.km-wp-dark .km-popup .k-list-container,
+.km-wp-dark .km-modalview,
+.km-wp-dark .km-popup-wrapper,
+.km-wp-dark .km-footer {
+  background-color: #1f1f1f;
+}
+/* line 84, template.less */
+.km-wp-light .km-actionsheet-wrapper,
+.km-wp-light .km-popup .k-list-container,
+.km-wp-light .km-modalview,
+.km-wp-light .km-popup-wrapper,
+.km-wp-light .km-footer {
+  background-color: #dddddd;
+}
+/* line 93, template.less */
+.km-wp-dark .km-button,
+.km-wp-dark .km-listview-link:after {
+  border-color: #ffffff;
+}
+/* line 99, template.less */
+.km-wp-light .km-button,
+.km-wp-light .km-listview-link:after {
+  border-color: #000000;
+}
+/* line 105, template.less */
+.km-wp .km-detail:active,
+.km-wp .km-button:active,
+.km-wp .km-detail.km-state-active,
+.km-wp .km-button.km-state-active,
+.km-wp .km-actionsheet > li > a:hover,
+.km-wp .km-actionsheet > li > a:active,
+.km-wp .km-actionsheet > li > .k-state-active,
+.km-wp .km-popup li.k-item:active,
+.km-wp .km-popup li.k-state-selected {
+  background: Highlight;
+}
+/* line 118, template.less */
+.km-wp .km-detail:active,
+.km-wp .km-detail.km-state-active,
+.km-wp *:not(.km-tabstrip) > .km-button:active,
+.km-wp *:not(.km-tabstrip) > .km-button.km-state-active,
+.km-wp .km-actionsheet > li > a:hover,
+.km-wp .km-actionsheet > li > a:active,
+.km-wp .km-actionsheet > li > .k-state-active,
+.km-wp .km-popup li.k-item:active,
+.km-wp .km-popup li.k-state-selected {
+  color: HighlightText;
+}
+/* line 131, template.less */
+.km-wp-dark .km-list > li > .km-icon,
+.km-wp-dark .km-listview-link > .km-icon {
+  background: #333333;
+}
+/* line 137, template.less */
+.km-wp-light .km-list > li > .km-icon,
+.km-wp-light .km-listview-link > .km-icon {
+  background: #bebebe;
+}
+/* line 143, template.less */
+.km-wp-dark .km-state-active .km-listview-link,
+.km-wp-dark .km-state-active .km-listview-label {
+  color: #dddddd;
+}
+/* line 149, template.less */
+.km-wp-light .km-state-active .km-listview-link,
+.km-wp-light .km-state-active .km-listview-label {
+  color: #1f1f1f;
+}
+/* line 155, template.less */
+.km-wp .km-badge,
+.km-wp .km-state-active .km-listview-link:after {
+  border-color: HighlightText;
+}
+/* line 161, template.less */
+.km-wp .km-listview-label input[type=radio],
+.km-wp .km-listview-label input[type=checkbox] {
+  border-color: #ffffff;
+  box-shadow: 0 0 1px #ffffff;
+  -webkit-box-shadow: 0 0 1px #ffffff;
+}
+/* line 168, template.less */
+.km-wp-light .km-listview-label input[type=radio],
+.km-wp-light .km-listview-label input[type=checkbox] {
+  border-color: #000000;
+  box-shadow: 0 0 1px #000000;
+  -webkit-box-shadow: 0 0 1px #000000;
+}
+/* line 175, template.less */
+.km-wp .km-listview-label input[type=checkbox]:checked:after {
+  color: #ffffff;
+}
+/* line 180, template.less */
+.km-wp-light .km-listview-label input[type=checkbox]:checked:after {
+  color: #000000;
+}
+/* line 185, template.less */
+.km-wp .km-listview-label input[type=radio]:checked:after {
+  color: transparent;
+  background: #ffffff;
+}
+/* line 191, template.less */
+.km-wp-light .km-listview-label input[type=radio]:checked:after {
+  background: #000000;
+}
+/* line 196, template.less */
+.km-wp .km-badge,
+.km-wp .km-group-title {
+  background-color: Highlight;
+  color: HighlightText;
+}
+/* line 203, template.less */
+.km-wp-dark .km-loader h1,
+.km-wp-dark .km-filter-wrap:before,
+.km-wp-dark .km-filter-reset .km-clear {
+  color: #ffffff;
+}
+/* line 210, template.less */
+.km-wp-light .km-loader h1,
+.km-wp-light .km-filter-wrap:before,
+.km-wp-light .km-filter-reset .km-clear {
+  color: #000000;
+}
+/* line 217, template.less */
+.km-wp .km-navbar,
+.km-wp .k-toolbar {
+  background: Background;
+}
+/* line 223, template.less */
+.km-wp-dark-force .km-navbar,
+.km-wp-dark-force .k-toolbar {
+  background: #000000;
+}
+/* line 229, template.less */
+.km-wp-light-force .km-navbar,
+.km-wp-light-force .k-toolbar {
+  background: #ffffff;
+}
+/* line 235, template.less */
+.km-wp-dark .km-pages > li {
+  background: #ffffff;
+}
+/* line 240, template.less */
+.km-wp-light .km-pages > li {
+  background: #000000;
+}
+/* line 245, template.less */
+.km-wp .km-pages .km-current-page {
+  background: Highlight;
+}
+/* line 250, template.less */
+.km-wp-dark .km-switch-wrapper {
+  border-color: #ffffff;
+}
+/* line 255, template.less */
+.km-wp-light .km-switch-wrapper {
+  border-color: #000000;
+}
+/* line 260, template.less */
+.km-wp-light .km-switch-container {
+  box-shadow: inset 0 0 0 0.2em #ffffff;
+  -webkit-box-shadow: inset 0 0 0 0.2em #ffffff;
+}
+/* line 265, template.less */
+.km-wp-dark .km-switch-container {
+  box-shadow: inset 0 0 0 0.2em #000000;
+  -webkit-box-shadow: inset 0 0 0 0.2em #000000;
+}
+/* line 270, template.less */
+.km-wp-dark .km-switch-handle {
+  box-shadow: 0 0 0 0.3em #000000;
+  -webkit-box-shadow: 0 0 0 0.3em #000000;
+  background: #ffffff;
+}
+/* line 276, template.less */
+.km-wp-light .km-switch-handle {
+  box-shadow: 0 0 0 0.3em #ffffff;
+  -webkit-box-shadow: 0 0 0 0.3em #ffffff;
+  background: #000000;
+}
+/* line 282, template.less */
+.km-wp .km-switch-background {
+  background: Highlight;
+}
+/* line 287, template.less */
+.km-wp .km-tabstrip .km-state-active .km-icon {
+  background-color: Highlight;
+  color: HighlightText;
+}
+/* line 293, template.less */
+.km-wp-dark .km-scroller-pull .km-icon,
+.km-wp-dark .km-tabstrip .km-state-active .km-icon {
+  border-color: #ffffff;
+}
+/* line 299, template.less */
+.km-wp-light .km-scroller-pull .km-icon,
+.km-wp-light .km-tabstrip .km-state-active .km-icon {
+  border-color: #000000;
+}
+/* line 305, template.less */
+.km-wp-light .km-loader:before,
+.km-wp-light .km-loader:after,
+.km-wp-light .km-loader .km-loading,
+.km-wp-light .km-loader .km-loading:after,
+.km-wp-light .km-loader .km-loading:before,
+.km-wp-light .km-scroller-refresh:after,
+.km-wp-light .km-scroller-refresh:before,
+.km-wp-light .km-scroller-refresh .km-icon,
+.km-wp-light .km-scroller-refresh .km-icon:after,
+.km-wp-light .km-scroller-refresh .km-icon:before {
+  color: #000000;
+}
+/* line 319, template.less */
+.km-wp-dark .km-loading-right {
+  background: #1f1f1f;
+}
+/* line 324, template.less */
+.km-wp-light .km-loading-right {
+  background: #dddddd;
+}
+/* line 329, template.less */
+.km-wp .km-touch-scrollbar {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+/* Forms */
+/* line 336, template.less */
+.km-wp input[type=password],
+.km-wp input[type=search],
+.km-wp input[type=number],
+.km-wp input[type=tel],
+.km-wp input[type=url],
+.km-wp input[type=email],
+.km-wp input[type=text]:not(.k-input),
+.km-wp input[type=month],
+.km-wp input[type=color],
+.km-wp input[type=week],
+.km-wp input[type=date],
+.km-wp input[type=time],
+.km-wp input[type=datetime],
+.km-wp input[type=datetime-local],
+.km-wp select:not([multiple]),
+.km-wp .k-dropdown,
+.km-wp textarea {
+  border-color: #ffffff;
+  background: Background;
+  color: #ffffff;
+}
+/* line 359, template.less */
+.km-wp input::selection,
+.km-wp textarea::selection {
+  color: HighlightText;
+  background: Highlight;
+}
+/* line 366, template.less */
+.km-wp-light input[type=password],
+.km-wp-light input[type=search],
+.km-wp-light input[type=number],
+.km-wp-light input[type=tel],
+.km-wp-light input[type=url],
+.km-wp-light input[type=email],
+.km-wp-light input[type=text]:not(.k-input),
+.km-wp-light input[type=month],
+.km-wp-light input[type=color],
+.km-wp-light input[type=week],
+.km-wp-light input[type=date],
+.km-wp-light input[type=time],
+.km-wp-light input[type=datetime],
+.km-wp-light input[type=datetime-local],
+.km-wp-light select:not([multiple]),
+.km-wp-light .k-dropdown,
+.km-wp-light textarea {
+  border-color: #000000;
+  color: #000000;
+}
+/* line 388, template.less */
+.km-wp-dark-force input[type=password],
+.km-wp-dark-force input[type=search],
+.km-wp-dark-force input[type=number],
+.km-wp-dark-force input[type=tel],
+.km-wp-dark-force input[type=url],
+.km-wp-dark-force input[type=email],
+.km-wp-dark-force input[type=text]:not(.k-input),
+.km-wp-dark-force input[type=month],
+.km-wp-dark-force input[type=color],
+.km-wp-dark-force input[type=week],
+.km-wp-dark-force input[type=date],
+.km-wp-dark-force input[type=time],
+.km-wp-dark-force input[type=datetime],
+.km-wp-dark-force input[type=datetime-local],
+.km-wp-dark-force select:not([multiple]),
+.km-wp-dark-force .k-dropdown,
+.km-wp-dark-force textarea {
+  background: #000000;
+}
+/* line 409, template.less */
+.km-wp-light-force input[type=password],
+.km-wp-light-force input[type=search],
+.km-wp-light-force input[type=number],
+.km-wp-light-force input[type=tel],
+.km-wp-light-force input[type=url],
+.km-wp-light-force input[type=email],
+.km-wp-light-force input[type=text]:not(.k-input),
+.km-wp-light-force input[type=month],
+.km-wp-light-force input[type=color],
+.km-wp-light-force input[type=week],
+.km-wp-light-force input[type=date],
+.km-wp-light-force input[type=time],
+.km-wp-light-force input[type=datetime],
+.km-wp-light-force input[type=datetime-local],
+.km-wp-light-force select:not([multiple]),
+.km-wp-light-force .k-dropdown,
+.km-wp-light-force textarea {
+  background: #ffffff;
+}
+/* line 430, template.less */
+.km-wp input[type=password]:focus,
+.km-wp input[type=search]:focus,
+.km-wp input[type=number]:focus,
+.km-wp input[type=tel]:focus,
+.km-wp input[type=url]:focus,
+.km-wp input[type=email]:focus,
+.km-wp input[type=text]:not(.k-input):focus,
+.km-wp input[type=month]:focus,
+.km-wp input[type=color]:focus,
+.km-wp input[type=week]:focus,
+.km-wp input[type=date]:focus,
+.km-wp input[type=time]:focus,
+.km-wp input[type=datetime]:focus,
+.km-wp input[type=datetime-local]:focus,
+.km-wp textarea:focus {
+  border-color: Highlight;
+}
+/* line 449, template.less */
+.km-wp select:not([multiple]):focus,
+.km-wp .k-dropdown .k-state-active,
+.km-wp .k-dropdown .k-state-focused {
+  color: HighlightText;
+  border-color: HighlightText;
+  background-color: Highlight;
+}
+/* Slider */
+/* line 460, template.less */
+.km-wp .k-slider .k-draghandle,
+.km-wp .k-slider .k-draghandle:hover {
+  background: #ffffff;
+}
+/* line 466, template.less */
+.km-wp-light .k-slider .k-draghandle,
+.km-wp-light .k-slider .k-draghandle:hover {
+  background: #000000;
+}
+/* line 472, template.less */
+.km-wp .k-slider .k-tick-large:before {
+  background: #000000;
+}
+/* line 477, template.less */
+.km-wp-light .k-slider .k-tick-large:before {
+  background: #ffffff;
+}
+/* line 482, template.less */
+.km-wp .k-slider-selection {
+  background: Highlight;
+}
+/* line 487, template.less */
+.km-wp .k-slider-track {
+  background: #333333;
+}
+/* line 492, template.less */
+.km-wp-light .k-slider-track {
+  background: #bebebe;
+}
+/* SplitView */
+/*# sourceMappingURL=splitview.css.map */

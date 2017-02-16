@@ -1,0 +1,202 @@
+/* Window */
+/* line 5, window.less */
+div.k-window {
+  display: inline-block;
+  position: absolute;
+  z-index: 10001;
+  border-style: solid;
+  border-width: 1px;
+  padding-top: 2em;
+}
+/* line 15, window.less */
+.k-block > .k-header,
+.k-window-titlebar {
+  position: absolute;
+  width: 100%;
+  height: 1.1em;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  margin-top: -2em;
+  padding: .4em 0;
+  font-size: 1.2em;
+  white-space: nowrap;
+  min-height: 16px;
+  /* icon size */
+}
+/* line 30, window.less */
+.k-block > .k-header {
+  position: relative;
+  margin: -2px 0 10px -2px;
+  padding: .3em 2px;
+}
+/* line 37, window.less */
+.k-window-title {
+  position: absolute;
+  left: .44em;
+  right: .44em;
+  overflow: hidden;
+  cursor: default;
+  text-overflow: ellipsis;
+}
+/* line 47, window.less */
+.k-window-title .k-image {
+  margin: 0 5px 0 0;
+  vertical-align: middle;
+}
+/* line 53, window.less */
+div.k-window-titleless {
+  padding-top: 0;
+}
+/* line 58, window.less */
+div.k-window-content {
+  position: relative;
+  height: 100%;
+  padding: .58em;
+  overflow: auto;
+  outline: 0;
+}
+/* line 67, window.less */
+div.k-window-iframecontent {
+  padding: 0;
+  overflow: visible;
+}
+/* line 73, window.less */
+.k-window-content > .km-scroll-container {
+  height: 100%;
+}
+/* Compensate for content padding in IE7 */
+/* line 79, window.less */
+.k-ie7 .k-window {
+  padding-bottom: 1.16em;
+}
+/* line 80, window.less */
+.k-ie7 .k-window-titleless {
+  padding-bottom: 0;
+}
+/* line 82, window.less */
+.k-window-titlebar .k-window-actions {
+  position: absolute;
+  top: 0;
+  right: .3em;
+  padding-top: .3em;
+  white-space: nowrap;
+}
+/* line 91, window.less */
+.k-window-titlebar .k-window-action {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  text-decoration: none;
+  vertical-align: middle;
+  opacity: .7;
+}
+/* line 102, window.less */
+.k-window-titlebar .k-state-hover {
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px;
+  opacity: 1;
+}
+/* line 110, window.less */
+.k-window-action .k-icon {
+  margin: 0;
+  vertical-align: top;
+}
+/* line 116, window.less */
+.k-window .k-resize-handle {
+  position: absolute;
+  z-index: 1;
+  background-color: #fff;
+  font-size: 0;
+  line-height: 6px;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  zoom: 1;
+}
+/* line 128, window.less */
+.k-resize-n {
+  top: -3px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  cursor: n-resize;
+}
+/* line 129, window.less */
+.k-resize-e {
+  top: 0;
+  right: -3px;
+  width: 6px;
+  height: 100%;
+  cursor: e-resize;
+}
+/* line 130, window.less */
+.k-resize-s {
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  cursor: s-resize;
+}
+/* line 131, window.less */
+.k-resize-w {
+  top: 0;
+  left: -3px;
+  width: 6px;
+  height: 100%;
+  cursor: w-resize;
+}
+/* line 132, window.less */
+.k-resize-se {
+  bottom: -3px;
+  right: -3px;
+  width: 16px;
+  height: 16px;
+  cursor: se-resize;
+}
+/* line 133, window.less */
+.k-resize-sw {
+  bottom: -3px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  cursor: sw-resize;
+}
+/* line 134, window.less */
+.k-resize-ne {
+  top: -3px;
+  right: -3px;
+  width: 6px;
+  height: 6px;
+  cursor: ne-resize;
+}
+/* line 135, window.less */
+.k-resize-nw {
+  top: -3px;
+  left: -3px;
+  width: 6px;
+  height: 6px;
+  cursor: nw-resize;
+}
+/* line 137, window.less */
+.k-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  filter: alpha(opacity=50);
+  opacity: .5;
+}
+/* line 150, window.less */
+.k-window .k-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  filter: alpha(opacity=0);
+  opacity: 0;
+}
+/*# sourceMappingURL=window.css.map */

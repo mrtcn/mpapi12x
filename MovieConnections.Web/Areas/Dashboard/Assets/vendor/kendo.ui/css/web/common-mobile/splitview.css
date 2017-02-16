@@ -1,0 +1,910 @@
+/* SplitView */
+/* line 2, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-splitview > .km-content {
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+/* line 9, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-vertical > .km-content {
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 15, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-content > .km-pane {
+  -moz-box-flex: 2;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  width: auto;
+  height: auto;
+}
+/* line 22, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-content > .km-pane:first-child {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* line 27, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-horizontal > .km-content > .km-pane {
+  top: 0;
+  bottom: 0;
+}
+/* line 34, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\splitview.less */
+.km-split-vertical > .km-content > .km-pane > .km-view {
+  display: -webkit-box;
+}
+/* Common Platform CSS */
+@-ms-viewport {
+  width: device-width;
+  user-zoom: fixed;
+  max-zoom: 1;
+  min-zoom: 1;
+}
+@media (orientation: landscape) {
+  /* line 14, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-tablet .km-on-ios.km-horizontal.km-web:not(.km-ios-chrome) {
+    position: fixed;
+    bottom: 0;
+  }
+}
+/* line 20, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root {
+  font-size: .92em;
+}
+/* line 25, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root a {
+  color: inherit;
+}
+/* line 30, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-tablet {
+  font-size: 1em;
+}
+/* line 35, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root *:focus {
+  outline-width: 0;
+}
+/* line 40, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root,
+.km-pane,
+.km-pane-wrapper {
+  width: 100%;
+  height: 100%;
+  -ms-touch-action: none;
+  -ms-content-zooming: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  overflow-x: hidden;
+}
+/* line 54, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-pane-wrapper {
+  position: absolute;
+}
+/* line 58, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-pane,
+.km-shim {
+  font-family: sans-serif;
+}
+/* line 64, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-pane {
+  overflow-x: hidden;
+  position: relative;
+}
+/* line 73, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-vertical .km-collapsible-pane {
+  position: absolute;
+  z-index: 2 !important;
+  -webkit-transition: -webkit-transform 350ms ease-out;
+  -ms-transition: -ms-transform 350ms ease-out;
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 81, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-vertical .km-expanded-splitview .km-collapsible-pane {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 85, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-expanded-pane-shim {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* line 94, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-expanded-splitview .km-expanded-pane-shim {
+  display: block;
+  z-index: 1;
+}
+/* line 99, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root > * {
+  margin: 0;
+  padding: 0;
+}
+/* line 105, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 111, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-content {
+  display: block;
+}
+/* line 116, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-view,
+.km-split-content {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+  vertical-align: top;
+}
+/* line 132, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.k-ff .km-view,
+.k-ff .km-pane {
+  overflow: hidden;
+}
+/* line 138, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.k-ff18 .km-view,
+.k-ff18 .km-pane,
+.k-ff19 .km-view,
+.k-ff19 .km-pane,
+.k-ff20 .km-view,
+.k-ff20 .km-pane,
+.k-ff21 .km-view,
+.k-ff21 .km-pane {
+  position: relative;
+}
+/* line 146, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.k-ff .km-view {
+  display: -moz-inline-box;
+  display: inline-flex;
+}
+/* line 152, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-content {
+  min-height: 1px;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -moz-box-align: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  flex-align: stretch;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+/* line 162, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-content p,
+.km-content h1,
+.km-content h2,
+.km-content h3,
+.km-content h4,
+.km-content h5,
+.km-content h6 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/* line 169, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-header,
+.km-footer {
+  display: block;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  width: 100%;
+}
+/* line 178, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-header {
+  padding: 0;
+}
+/* line 183, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-footer {
+  background: #1a1a1a;
+}
+/* line 188, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+[data-role="layout"] {
+  display: none;
+}
+/* line 193, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+[data-role="view"],
+[data-role="drawer"] {
+  visibility: hidden;
+}
+/* line 198, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-view {
+  visibility: visible;
+}
+/* line 203, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-header,
+.km-footer {
+  position: relative;
+  z-index: 1;
+}
+@media all and (-webkit-min-device-pixel-ratio: 10000), not all and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 213, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-view {
+    display: table;
+  }
+  /* line 214, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-header,
+  .km-footer,
+  .km-content {
+    display: table-row;
+  }
+  /* line 215, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  .km-header,
+  .km-footer {
+    height: 1px;
+  }
+}
+/* line 218, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root .k-toolbar,
+.km-navbar,
+.km-button,
+.km-buttongroup,
+.km-tabstrip,
+.km-blackberry li.km-actionsheet-cancel > a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-origin: border-box;
+  position: relative;
+  display: inline-block;
+  padding: .4em .7em;
+  margin: .1rem;
+  overflow: visible;
+  text-decoration: none;
+}
+/* line 237, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-tabstrip,
+.km-root .k-toolbar,
+.km-navbar {
+  display: block;
+  padding: .8em;
+  margin: 0;
+  width: 100%;
+  border-width: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 249, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scroller {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-touch-action: pan-x pan-y;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-scroll-snap-type: proximity;
+}
+/* line 258, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-default-content {
+  padding: 1em;
+}
+/* line 263, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-shim {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10001;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 275, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root .km-shim {
+  position: absolute;
+}
+/* line 279, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-shim:before {
+  content: "\a0";
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 288, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-shim .k-animation-container {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0;
+  width: auto;
+}
+/* Loader */
+/* line 297, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader {
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 130px;
+  z-index: 100000;
+  padding: 30px 30px;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -90px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 312, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader h1 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 320, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader .km-loading,
+.km-load-more .km-icon,
+.km-scroller-refresh .km-icon {
+  animation: km-spin 1s infinite linear;
+  -moz-animation: km-spin 1s infinite linear;
+  -webkit-animation: km-spin 1s infinite linear;
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+}
+/* line 332, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loader .km-loading:after,
+.km-load-more .km-icon:after {
+  color: #ccc;
+}
+/* line 338, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-loading-left,
+.km-loading-right {
+  display: none;
+}
+@-webkit-keyframes km-spin {
+  /* line 346, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 347, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes km-spin {
+  /* line 352, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 353, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes km-spin {
+  /* line 358, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  /* line 359, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes km-spin {
+  /* line 364, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -o-transform: rotate(0deg);
+  }
+  /* line 365, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes km-ios-spin {
+  /* line 370, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 371, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes km-ios-spin1 {
+  /* line 376, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -webkit-transform: rotate(-135deg);
+  }
+  /* line 377, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -webkit-transform: rotate(225deg);
+  }
+}
+@-moz-keyframes km-ios-spin {
+  /* line 382, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 383, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes km-ios-spin1 {
+  /* line 388, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    -moz-transform: rotate(-135deg);
+  }
+  /* line 389, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    -moz-transform: rotate(225deg);
+  }
+}
+@keyframes km-ios-spin {
+  /* line 394, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    transform: rotate(0deg);
+  }
+  /* line 395, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes km-ios-spin1 {
+  /* line 400, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  from {
+    transform: rotate(-135deg);
+  }
+  /* line 401, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+  to {
+    transform: rotate(225deg);
+  }
+}
+/* Stretched View */
+/* line 407, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-stretched-view {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 412, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-stretched-view > * {
+  width: 100%;
+}
+/* line 417, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 100000;
+}
+/* line 428, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-root.km-native-scrolling,
+.km-root.km-native-scrolling .km-view,
+.km-root.km-native-scrolling .km-splitview .km-pane {
+  min-height: 100%;
+  height: auto;
+  -webkit-transform: none;
+  overflow-x: visible;
+}
+/* line 438, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-pane,
+.km-native-scrolling .km-view {
+  -ms-touch-action: auto;
+  display: block;
+}
+/* line 445, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-content {
+  -ms-flex: auto;
+}
+/* line 450, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-blackberry .km-content {
+  min-height: auto;
+}
+/* Restore position:absolute during animation */
+/* line 456, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-splitview {
+  position: absolute;
+}
+/* line 461, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-header {
+  position: fixed;
+  top: 0;
+}
+/* line 467, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-android .km-header {
+  top: auto;
+  bottom: 0;
+}
+/* line 473, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-footer {
+  position: fixed;
+  bottom: 0;
+}
+/* line 479, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-android .km-footer {
+  top: 0;
+  bottom: auto;
+}
+/* line 485, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-badge {
+  z-index: auto;
+}
+/* line 490, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-splitview .km-header,
+.km-native-scrolling .km-splitview .km-footer,
+.km-native-scrolling .km-popup.km-pane .km-header,
+.km-native-scrolling .km-popup.km-pane .km-footer {
+  position: absolute;
+}
+/* line 498, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-modalview .km-header,
+.km-native-scrolling .km-modalview .km-footer {
+  position: relative;
+}
+/* line 504, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-content {
+  width: 100%;
+}
+/* line 509, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-shim,
+.km-native-scrolling .km-popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: auto !important;
+}
+/* line 518, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-drawer {
+  position: fixed;
+  top: 0;
+  height: 100% !important;
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 527, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling > .km-pane > .km-loader {
+  position: fixed;
+  top: 50%;
+  margin-top: -2em;
+}
+/* line 534, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-native-scrolling .km-header,
+.km-native-scrolling .km-footer {
+  z-index: 2;
+}
+/* Disabled states */
+/* line 542, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\mobile\common\base.less */
+.km-state-disabled {
+  opacity: 0.5;
+}
+/* line 15, base.less */
+.km-widget {
+  font-size: 1em;
+}
+/* line 20, base.less */
+.km-root .km-pane,
+.km-root .km-view,
+.km-root .km-slider,
+.km-root .km-switch,
+.km-root .km-group-title,
+.km-root .km-filter-reset,
+.km-root .km-shim .k-animation-container {
+  -webkit-transform: none;
+}
+/* line 31, base.less */
+.km-widget,
+.km-widget * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: border-box;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+}
+/* line 38, base.less */
+.km-toolbar,
+.km-navbar,
+.km-tabstrip,
+.km-tabstrip .km-button {
+  border-radius: 0;
+}
+/* line 46, base.less */
+.km-touch-scrollbar {
+  border: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 1em;
+}
+/* line 53, base.less */
+.km-popup .k-popup {
+  font-size: 1em !important;
+}
+/* line 58, base.less */
+.km-popup-wrapper.k-popup {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  background: none;
+}
+/* line 64, base.less */
+.km-popup .k-item,
+.km-actionsheet > li > a {
+  text-decoration: none;
+  padding: .5em 0 .5em .6em;
+  border: 0;
+  border-radius: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 76, base.less */
+.km-actionsheet-wrapper,
+.km-popup .k-list-container {
+  bottom: 0;
+  border: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 87, base.less */
+.km-popup {
+  left: 0 !important;
+  top: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 96, base.less */
+.km-popup .k-list-container {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 80%;
+}
+/* line 103, base.less */
+.km-shim .k-animation-container {
+  left: 0;
+  top: auto;
+  bottom: 0;
+}
+/* Loader & Pull-to-refresh */
+/* line 112, base.less */
+.km-loader:before,
+.km-scroller-refresh.km-load-more,
+.km-scroller-pull {
+  border-radius: 20em;
+  overflow: visible;
+}
+/* line 120, base.less */
+.km-loader:before {
+  content: "\a0";
+  display: block;
+  position: absolute;
+  margin-top: -2em;
+  margin-left: -2em;
+  width: 4em;
+  height: 4em;
+  top: 50%;
+  left: 50%;
+  border-radius: 5em;
+}
+/* line 134, base.less */
+.km-loader {
+  left: 0;
+  top: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 143, base.less */
+.km-loader h1 {
+  display: none;
+  font-size: 1em;
+  position: absolute;
+  left: -50%;
+  width: 200%;
+  top: 55%;
+}
+/* line 153, base.less */
+.km-loading,
+.km-loader .km-loading-left,
+.km-loader .km-loading-right,
+.km-load-more.km-scroller-refresh .km-icon,
+.km-scroller-pull.km-scroller-refresh .km-icon,
+.km-scroller-refresh .km-loading-left,
+.km-scroller-refresh .km-loading-right {
+  font-size: 1em;
+  display: block;
+  width: .36em;
+  height: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -0.8em;
+  margin-top: -0.5em;
+  border-radius: 1em;
+  animation: km-webload 0.6s infinite linear;
+  -moz-animation: km-webload 0.6s infinite linear;
+  -webkit-animation: km-webload 0.6s infinite linear;
+  -webkit-background-clip: none;
+}
+/* line 175, base.less */
+.km-load-more.km-scroller-refresh .km-icon,
+.km-scroller-pull.km-scroller-refresh .km-icon,
+.km-scroller-refresh .km-loading-left,
+.km-scroller-refresh .km-loading-right {
+  height: .6em;
+  margin-top: -0.3em;
+  margin-left: -0.6em;
+  width: .25em;
+  animation: km-webrefresh 0.6s infinite linear;
+  -moz-animation: km-webrefresh 0.6s infinite linear;
+  -webkit-animation: km-webrefresh 0.6s infinite linear;
+}
+/* line 187, base.less */
+.km-root .km-loading-left {
+  margin-left: -0.2em;
+  animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -webkit-animation-delay: 0.2s;
+}
+/* line 193, base.less */
+.km-root .km-loading-right {
+  margin-left: .42em;
+  animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+}
+@keyframes km-webload {
+  /* line 201, base.less */
+  0% {
+    height: 1em;
+    margin-top: -0.5em;
+  }
+  /* line 202, base.less */
+  33% {
+    height: 2em;
+    margin-top: -1em;
+  }
+  /* line 203, base.less */
+  66% {
+    height: 1em;
+    margin-top: -0.5em;
+  }
+}
+@-moz-keyframes km-webload {
+  /* line 208, base.less */
+  0% {
+    height: 1em;
+    margin-top: -0.5em;
+  }
+  /* line 209, base.less */
+  33% {
+    height: 2em;
+    margin-top: -1em;
+  }
+  /* line 210, base.less */
+  66% {
+    height: 1em;
+    margin-top: -0.5em;
+  }
+}
+@-webkit-keyframes km-webload {
+  /* line 215, base.less */
+  0% {
+    height: 1em;
+    margin-top: -0.5em;
+  }
+  /* line 216, base.less */
+  33% {
+    height: 2em;
+    margin-top: -1em;
+  }
+  /* line 217, base.less */
+  66% {
+    height: 1em;
+    margin-top: -0.5em;
+  }
+}
+@keyframes km-webrefresh {
+  /* line 222, base.less */
+  0% {
+    height: .6em;
+    margin-top: -0.3em;
+  }
+  /* line 223, base.less */
+  33% {
+    height: 1.2em;
+    margin-top: -0.6em;
+  }
+  /* line 224, base.less */
+  66% {
+    height: .6em;
+    margin-top: -0.3em;
+  }
+}
+@-moz-keyframes km-webrefresh {
+  /* line 229, base.less */
+  0% {
+    height: .6em;
+    margin-top: -0.3em;
+  }
+  /* line 230, base.less */
+  33% {
+    height: 1.2em;
+    margin-top: -0.6em;
+  }
+  /* line 231, base.less */
+  66% {
+    height: .6em;
+    margin-top: -0.3em;
+  }
+}
+@-webkit-keyframes km-webrefresh {
+  /* line 236, base.less */
+  0% {
+    height: .6em;
+    margin-top: -0.3em;
+  }
+  /* line 237, base.less */
+  33% {
+    height: 1.2em;
+    margin-top: -0.6em;
+  }
+  /* line 238, base.less */
+  66% {
+    height: .6em;
+    margin-top: -0.3em;
+  }
+}
+/*# sourceMappingURL=splitview.css.map */

@@ -1,0 +1,64 @@
+/* line 1, forms.less */
+.k-edit-form {
+  margin: 0;
+  padding: 0;
+}
+/* line 7, forms.less */
+.k-window > div.k-popup-edit-form {
+  padding: 1em 0;
+}
+/* line 12, forms.less */
+.k-grid-edit-row .k-edit-form td {
+  border-bottom-width: 0;
+}
+/* line 17, forms.less */
+.k-edit-form-container {
+  position: relative;
+  width: 400px;
+}
+/* line 23, forms.less */
+.k-edit-label,
+.k-edit-form-container .editor-label {
+  float: left;
+  clear: both;
+  width: 30%;
+  padding: .4em 0 1em;
+  margin-left: 2%;
+  text-align: right;
+}
+/* line 34, forms.less */
+.k-edit-field,
+.k-edit-form-container .editor-field {
+  float: right;
+  clear: right;
+  width: 60%;
+  margin-right: 2%;
+  padding: 0 0 .6em;
+}
+/* line 44, forms.less */
+.k-edit-field > input[type="checkbox"],
+.k-edit-field > input[type="radio"] {
+  margin-top: .4em;
+}
+/* line 50, forms.less */
+.k-edit-form-container .k-button {
+  margin: 0 .16em;
+}
+/* line 55, forms.less */
+.k-edit-field > input[type="checkbox"]:first-child,
+.k-edit-field > input[type="radio"]:first-child,
+.k-edit-field > label:first-child > input[type="checkbox"],
+.k-edit-field > .k-button:first-child {
+  margin-left: 0;
+}
+/* line 63, forms.less */
+.k-edit-form-container .k-edit-buttons {
+  clear: both;
+  text-align: right;
+  border-width: 1px 0 0;
+  border-style: solid;
+  position: relative;
+  bottom: -1em;
+  padding: .6em;
+}
+/*# sourceMappingURL=forms.css.map */

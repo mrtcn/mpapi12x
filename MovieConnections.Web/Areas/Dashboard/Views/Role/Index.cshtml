@@ -1,0 +1,20 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+<div class="row">
+    <div class="col-md-12">
+        <div id="grid"
+             data-role="extendedgrid"
+             data-controllername="role"
+             data-create="true"
+             data-create-url="/dashboard/role/create"
+             data-edit="true"
+             data-update-url="/dashboard/role/update"
+             data-delete="true"
+             data-remove-url="/dashboard/role/remove"
+             data-export="true"
+             data-read-url="/dashboard/role/list">            
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Areas/Dashboard/Assets/dist/js/dashboard/role.js"></script>
+}

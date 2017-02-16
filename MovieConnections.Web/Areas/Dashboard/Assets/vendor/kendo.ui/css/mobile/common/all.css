@@ -1,0 +1,2752 @@
+/* Common Platform CSS */
+@-ms-viewport {
+  width: device-width;
+  user-zoom: fixed;
+  max-zoom: 1;
+  min-zoom: 1;
+}
+@media (orientation: landscape) {
+  /* line 14, base.less */
+  .km-tablet .km-on-ios.km-horizontal.km-web:not(.km-ios-chrome) {
+    position: fixed;
+    bottom: 0;
+  }
+}
+/* line 20, base.less */
+.km-root {
+  font-size: .92em;
+}
+/* line 25, base.less */
+.km-root a {
+  color: inherit;
+}
+/* line 30, base.less */
+.km-tablet {
+  font-size: 1em;
+}
+/* line 35, base.less */
+.km-root *:focus {
+  outline-width: 0;
+}
+/* line 40, base.less */
+.km-root,
+.km-pane,
+.km-pane-wrapper {
+  width: 100%;
+  height: 100%;
+  -ms-touch-action: none;
+  -ms-content-zooming: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  text-size-adjust: none;
+  overflow-x: hidden;
+}
+/* line 54, base.less */
+.km-pane-wrapper {
+  position: absolute;
+}
+/* line 58, base.less */
+.km-pane,
+.km-shim {
+  font-family: sans-serif;
+}
+/* line 64, base.less */
+.km-pane {
+  overflow-x: hidden;
+  position: relative;
+}
+/* line 73, base.less */
+.km-vertical .km-collapsible-pane {
+  position: absolute;
+  z-index: 2 !important;
+  -webkit-transition: -webkit-transform 350ms ease-out;
+  -ms-transition: -ms-transform 350ms ease-out;
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 81, base.less */
+.km-vertical .km-expanded-splitview .km-collapsible-pane {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 85, base.less */
+.km-expanded-pane-shim {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+/* line 94, base.less */
+.km-expanded-splitview .km-expanded-pane-shim {
+  display: block;
+  z-index: 1;
+}
+/* line 99, base.less */
+.km-root > * {
+  margin: 0;
+  padding: 0;
+}
+/* line 105, base.less */
+.km-root * {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+/* line 111, base.less */
+.km-content {
+  display: block;
+}
+/* line 116, base.less */
+.km-view,
+.km-split-content {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  align-content: stretch;
+  vertical-align: top;
+}
+/* line 132, base.less */
+.k-ff .km-view,
+.k-ff .km-pane {
+  overflow: hidden;
+}
+/* line 138, base.less */
+.k-ff18 .km-view,
+.k-ff18 .km-pane,
+.k-ff19 .km-view,
+.k-ff19 .km-pane,
+.k-ff20 .km-view,
+.k-ff20 .km-pane,
+.k-ff21 .km-view,
+.k-ff21 .km-pane {
+  position: relative;
+}
+/* line 146, base.less */
+.k-ff .km-view {
+  display: -moz-inline-box;
+  display: inline-flex;
+}
+/* line 152, base.less */
+.km-content {
+  min-height: 1px;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -moz-box-align: stretch;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  flex-align: stretch;
+  width: auto;
+  overflow: hidden;
+  position: relative;
+}
+/* line 162, base.less */
+.km-content p,
+.km-content h1,
+.km-content h2,
+.km-content h3,
+.km-content h4,
+.km-content h5,
+.km-content h6 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+/* line 169, base.less */
+.km-header,
+.km-footer {
+  display: block;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  width: 100%;
+}
+/* line 178, base.less */
+.km-header {
+  padding: 0;
+}
+/* line 183, base.less */
+.km-footer {
+  background: #1a1a1a;
+}
+/* line 188, base.less */
+[data-role="layout"] {
+  display: none;
+}
+/* line 193, base.less */
+[data-role="view"],
+[data-role="drawer"] {
+  visibility: hidden;
+}
+/* line 198, base.less */
+.km-view {
+  visibility: visible;
+}
+/* line 203, base.less */
+.km-header,
+.km-footer {
+  position: relative;
+  z-index: 1;
+}
+@media all and (-webkit-min-device-pixel-ratio: 10000), not all and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 213, base.less */
+  .km-view {
+    display: table;
+  }
+  /* line 214, base.less */
+  .km-header,
+  .km-footer,
+  .km-content {
+    display: table-row;
+  }
+  /* line 215, base.less */
+  .km-header,
+  .km-footer {
+    height: 1px;
+  }
+}
+/* line 218, base.less */
+.km-root .k-toolbar,
+.km-navbar,
+.km-button,
+.km-buttongroup,
+.km-tabstrip,
+.km-blackberry li.km-actionsheet-cancel > a {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-origin: border-box;
+  position: relative;
+  display: inline-block;
+  padding: .4em .7em;
+  margin: .1rem;
+  overflow: visible;
+  text-decoration: none;
+}
+/* line 237, base.less */
+.km-tabstrip,
+.km-root .k-toolbar,
+.km-navbar {
+  display: block;
+  padding: .8em;
+  margin: 0;
+  width: 100%;
+  border-width: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 249, base.less */
+.km-native-scroller {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-touch-action: pan-x pan-y;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -ms-scroll-snap-type: proximity;
+}
+/* line 258, base.less */
+.km-default-content {
+  padding: 1em;
+}
+/* line 263, base.less */
+.km-shim {
+  left: 0;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10001;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 275, base.less */
+.km-root .km-shim {
+  position: absolute;
+}
+/* line 279, base.less */
+.km-shim:before {
+  content: "\a0";
+  height: 100%;
+  width: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 288, base.less */
+.km-shim .k-animation-container {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0;
+  width: auto;
+}
+/* Loader */
+/* line 297, base.less */
+.km-loader {
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 130px;
+  z-index: 100000;
+  padding: 30px 30px;
+  position: absolute;
+  margin-top: -70px;
+  margin-left: -90px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 312, base.less */
+.km-loader h1 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 320, base.less */
+.km-loader .km-loading,
+.km-load-more .km-icon,
+.km-scroller-refresh .km-icon {
+  animation: km-spin 1s infinite linear;
+  -moz-animation: km-spin 1s infinite linear;
+  -webkit-animation: km-spin 1s infinite linear;
+  display: block;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+}
+/* line 332, base.less */
+.km-loader .km-loading:after,
+.km-load-more .km-icon:after {
+  color: #ccc;
+}
+/* line 338, base.less */
+.km-loading-left,
+.km-loading-right {
+  display: none;
+}
+@-webkit-keyframes km-spin {
+  /* line 346, base.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 347, base.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes km-spin {
+  /* line 352, base.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 353, base.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-ms-keyframes km-spin {
+  /* line 358, base.less */
+  from {
+    -ms-transform: rotate(0deg);
+  }
+  /* line 359, base.less */
+  to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-o-keyframes km-spin {
+  /* line 364, base.less */
+  from {
+    -o-transform: rotate(0deg);
+  }
+  /* line 365, base.less */
+  to {
+    -o-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes km-ios-spin {
+  /* line 370, base.less */
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  /* line 371, base.less */
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes km-ios-spin1 {
+  /* line 376, base.less */
+  from {
+    -webkit-transform: rotate(-135deg);
+  }
+  /* line 377, base.less */
+  to {
+    -webkit-transform: rotate(225deg);
+  }
+}
+@-moz-keyframes km-ios-spin {
+  /* line 382, base.less */
+  from {
+    -moz-transform: rotate(0deg);
+  }
+  /* line 383, base.less */
+  to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes km-ios-spin1 {
+  /* line 388, base.less */
+  from {
+    -moz-transform: rotate(-135deg);
+  }
+  /* line 389, base.less */
+  to {
+    -moz-transform: rotate(225deg);
+  }
+}
+@keyframes km-ios-spin {
+  /* line 394, base.less */
+  from {
+    transform: rotate(0deg);
+  }
+  /* line 395, base.less */
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes km-ios-spin1 {
+  /* line 400, base.less */
+  from {
+    transform: rotate(-135deg);
+  }
+  /* line 401, base.less */
+  to {
+    transform: rotate(225deg);
+  }
+}
+/* Stretched View */
+/* line 407, base.less */
+.km-stretched-view {
+  display: -moz-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 412, base.less */
+.km-stretched-view > * {
+  width: 100%;
+}
+/* line 417, base.less */
+.km-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 100000;
+}
+/* line 428, base.less */
+.km-root.km-native-scrolling,
+.km-root.km-native-scrolling .km-view,
+.km-root.km-native-scrolling .km-splitview .km-pane {
+  min-height: 100%;
+  height: auto;
+  -webkit-transform: none;
+  overflow-x: visible;
+}
+/* line 438, base.less */
+.km-native-scrolling .km-pane,
+.km-native-scrolling .km-view {
+  -ms-touch-action: auto;
+  display: block;
+}
+/* line 445, base.less */
+.km-native-scrolling .km-content {
+  -ms-flex: auto;
+}
+/* line 450, base.less */
+.km-native-scrolling .km-blackberry .km-content {
+  min-height: auto;
+}
+/* Restore position:absolute during animation */
+/* line 456, base.less */
+.km-native-scrolling .km-splitview {
+  position: absolute;
+}
+/* line 461, base.less */
+.km-native-scrolling .km-header {
+  position: fixed;
+  top: 0;
+}
+/* line 467, base.less */
+.km-native-scrolling .km-android .km-header {
+  top: auto;
+  bottom: 0;
+}
+/* line 473, base.less */
+.km-native-scrolling .km-footer {
+  position: fixed;
+  bottom: 0;
+}
+/* line 479, base.less */
+.km-native-scrolling .km-android .km-footer {
+  top: 0;
+  bottom: auto;
+}
+/* line 485, base.less */
+.km-native-scrolling .km-badge {
+  z-index: auto;
+}
+/* line 490, base.less */
+.km-native-scrolling .km-splitview .km-header,
+.km-native-scrolling .km-splitview .km-footer,
+.km-native-scrolling .km-popup.km-pane .km-header,
+.km-native-scrolling .km-popup.km-pane .km-footer {
+  position: absolute;
+}
+/* line 498, base.less */
+.km-native-scrolling .km-modalview .km-header,
+.km-native-scrolling .km-modalview .km-footer {
+  position: relative;
+}
+/* line 504, base.less */
+.km-native-scrolling .km-content {
+  width: 100%;
+}
+/* line 509, base.less */
+.km-native-scrolling .km-shim,
+.km-native-scrolling .km-popup-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: auto !important;
+}
+/* line 518, base.less */
+.km-native-scrolling .km-drawer {
+  position: fixed;
+  top: 0;
+  height: 100% !important;
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+/* line 527, base.less */
+.km-native-scrolling > .km-pane > .km-loader {
+  position: fixed;
+  top: 50%;
+  margin-top: -2em;
+}
+/* line 534, base.less */
+.km-native-scrolling .km-header,
+.km-native-scrolling .km-footer {
+  z-index: 2;
+}
+/* Disabled states */
+/* line 542, base.less */
+.km-state-disabled {
+  opacity: 0.5;
+}
+/* line 1, button.less */
+.km-badge,
+.km-detail {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  height: 2em;
+  font-size: .6rem;
+  text-shadow: none;
+}
+/* line 16, button.less */
+.km-badge {
+  top: -1em;
+  right: -1em;
+  line-height: 2em;
+  margin-left: .5em;
+  min-width: .9em;
+  padding: 0 .55em;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+/* line 28, button.less */
+.km-tabstrip .km-badge {
+  top: -0.2em;
+  right: auto;
+  margin-left: -1em;
+}
+/* DetailButtons */
+/* line 36, button.less */
+.km-detail {
+  position: absolute;
+  float: right;
+  right: .8rem;
+  top: 50%;
+  margin-top: -0.7rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 1rem;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 49, button.less */
+.km-widget .km-detaildisclose {
+  font-size: .8em;
+}
+/* line 54, button.less */
+.k-ff .km-detail {
+  width: 1rem;
+  height: 1rem;
+}
+/* line 60, button.less */
+.km-detail .km-text {
+  display: none;
+}
+/* line 64, button.less */
+.km-widget .km-rowinsert:after,
+.km-widget .km-rowdelete:after,
+.km-widget .km-contactadd:after,
+.km-widget .km-detaildisclose:after,
+.km-widget .km-rowinsert:before,
+.km-widget .km-rowdelete:before,
+.km-widget .km-contactadd:before,
+.km-widget .km-detaildisclose:before,
+.km-detail .km-icon {
+  left: .15em;
+  top: .15em;
+  line-height: 1em;
+  font-size: 1em;
+  position: absolute;
+}
+/* line 81, button.less */
+.km-widget .km-detaildisclose:after {
+  left: .1em;
+  top: .25em;
+  text-align: center;
+  font-weight: bold;
+}
+/* Buttons */
+/* line 90, button.less */
+.km-button {
+  cursor: pointer;
+  outline: 0;
+  text-align: center;
+}
+/* line 97, button.less */
+button.km-button {
+  display: inline-block;
+  font: inherit;
+}
+/* line 103, button.less */
+.km-button:hover {
+  text-decoration: none;
+}
+/* line 108, button.less */
+.km-button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+/* line 114, button.less */
+.km-ios .km-state-disabled .km-button,
+.km-android .km-state-disabled .km-button,
+.km-blackberry .km-state-disabled .km-button,
+.km-meego .km-state-disabled .km-button {
+  color: #aaa;
+  text-shadow: none;
+}
+/* line 123, button.less */
+.km-root .km-pane .k-button:focus,
+.km-root .km-pane .k-button:active,
+.km-root .km-pane .k-button:focus:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+/* line 3, buttongroup.less */
+.km-buttongroup {
+  padding: .4rem .7rem;
+  -webkit-margin-collapse: separate;
+  margin-collapse: separate;
+  margin: .5em auto;
+}
+/* line 11, buttongroup.less */
+.km-widget.km-buttongroup {
+  padding: 0;
+  border-color: transparent;
+  background: none;
+  white-space: nowrap;
+  display: table;
+}
+/* line 20, buttongroup.less */
+.km-buttongroup > .km-button {
+  display: table-cell;
+}
+/* line 25, buttongroup.less */
+.km-widget.km-buttongroup .km-button {
+  margin: 0;
+  border-width: 1px 0 1px 1px;
+  padding: .48em .9em .44em;
+}
+/* line 32, buttongroup.less */
+.km-tablet .km-buttongroup .km-button {
+  padding: .4em .8em .34em;
+}
+/* line 37, buttongroup.less */
+.km-widget.km-navbar .km-buttongroup {
+  font-size: .95rem;
+  line-height: 1em;
+  margin: 0 0 .2em;
+  display: inline-block;
+  height: 1.5em;
+  top: -2px;
+}
+/* line 47, buttongroup.less */
+.k-toolbar .km-buttongroup {
+  margin: 0;
+  display: inline-block;
+}
+/* line 53, buttongroup.less */
+.km-tablet .km-navbar .km-buttongroup {
+  top: -1px;
+}
+/* line 58, buttongroup.less */
+.km-widget.km-navbar .km-buttongroup > .km-button {
+  font-size: 1em;
+  min-width: 4rem;
+  text-align: center;
+}
+/* line 65, buttongroup.less */
+.km-tablet .km-navbar .km-buttongroup > .km-button {
+  min-width: 6rem;
+}
+/* line 70, buttongroup.less */
+.km-view .km-buttongroup .km-button:last-child {
+  border-right-width: 1px;
+}
+/* line 75, buttongroup.less */
+.km-ios .km-buttongroup .km-button {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+/* line 1, navbar.less */
+.km-hide-title {
+  display: none;
+}
+/* line 6, navbar.less */
+.km-show-title:after {
+  display: block;
+  content: "\a0";
+  height: 0;
+}
+/* line 13, navbar.less */
+.km-fill-title:after {
+  height: auto;
+}
+/* line 18, navbar.less */
+.km-footer .km-show-title:after {
+  display: inline-block;
+}
+/* line 23, navbar.less */
+.km-view-title,
+.km-dialog-title {
+  position: relative;
+  visibility: visible;
+  text-align: center;
+  font-size: 1.4em;
+  line-height: 2.3em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 35, navbar.less */
+.km-horizontal .km-view-title {
+  line-height: 2em;
+}
+/* line 40, navbar.less */
+.km-root .k-toolbar,
+.km-navbar {
+  padding: 0;
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-width: 0 0 1px 0;
+  background-color: #fff;
+}
+/* line 52, navbar.less */
+.k-ff.km-root .k-toolbar,
+.k-ff .km-navbar {
+  overflow: visible;
+}
+/* line 58, navbar.less */
+.km-navbar .km-button {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+/* line 64, navbar.less */
+.km-navbar .km-no-title {
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+}
+/* line 70, navbar.less */
+.km-horizontal .km-navbar .km-button {
+  margin-top: .3rem;
+  margin-bottom: .3rem;
+}
+/* line 76, navbar.less */
+.km-horizontal .km-navbar .km-no-title {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+/* line 82, navbar.less */
+.km-tablet.km-root .km-no-title {
+  padding-top: .55rem;
+  padding-bottom: .55rem;
+}
+/* line 88, navbar.less */
+.km-tablet .km-navbar .km-button {
+  margin-top: .45rem;
+  margin-bottom: .45rem;
+}
+/* line 94, navbar.less */
+.km-root .km-pane .km-navbar .km-no-title {
+  visibility: visible;
+  line-height: 0;
+}
+/* Navbar */
+/* line 103, navbar.less */
+.km-on-ios.km-black-translucent-status-bar.km-app .km-header .km-navbar {
+  padding-top: 1.4em;
+  background-clip: border-box;
+}
+/* line 110, navbar.less */
+.km-on-ios.km-ios5.km-cordova .km-header .km-navbar,
+.km-on-ios.km-ios6.km-cordova .km-header .km-navbar {
+  padding-top: 0;
+}
+/* line 116, navbar.less */
+.km-leftitem,
+.km-rightitem {
+  z-index: 1;
+  position: absolute;
+  right: .5em;
+}
+/* line 124, navbar.less */
+.km-popup .km-rightitem {
+  right: 0;
+}
+/* line 129, navbar.less */
+.km-leftitem {
+  left: .5em;
+  right: auto;
+}
+/* line 135, navbar.less */
+.km-popup .km-leftitem {
+  left: 0;
+}
+/* Center left/right item contents */
+/* line 141, navbar.less */
+.km-leftitem,
+.km-rightitem {
+  height: 100%;
+}
+/* line 147, navbar.less */
+.km-on-ios.km-black-translucent-status-bar.km-app .km-leftitem,
+.km-on-ios.km-black-translucent-status-bar.km-app .km-rightitem {
+  height: auto;
+}
+/* line 153, navbar.less */
+.km-leftitem > *,
+.km-rightitem > * {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 160, navbar.less */
+.km-leftitem:before,
+.km-rightitem:before {
+  content: "\a0";
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+}
+/* Toolbar */
+/* line 6, toolbar.less */
+.km-root .k-toolbar {
+  position: relative;
+  display: block;
+  vertical-align: middle;
+  text-align: right;
+  line-height: 2.2em;
+  border-style: solid;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  padding: .55em 3.4em .55em .5em;
+}
+/* line 18, toolbar.less */
+.km-root .km-widget.k-toolbar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 23, toolbar.less */
+.km-root .k-toolbar span.km-icon {
+  vertical-align: middle;
+}
+/* line 28, toolbar.less */
+.km-root .k-toolbar .k-button-icon {
+  padding-left: .4em;
+  padding-right: .4em;
+}
+/* line 34, toolbar.less */
+.km-root .k-toolbar .k-button-icon .km-icon {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 40, toolbar.less */
+.km-root .k-toolbar-resizable {
+  overflow: hidden;
+  white-space: nowrap;
+}
+/* line 46, toolbar.less */
+.km-root .k-toolbar > * {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left;
+  line-height: inherit;
+}
+/* line 54, toolbar.less */
+.km-root .k-toolbar .km-button {
+  line-height: inherit;
+}
+/* line 59, toolbar.less */
+.km-root div.k-toolbar > .k-align-left {
+  float: left;
+  line-height: inherit;
+}
+/* line 65, toolbar.less */
+.km-root div.k-toolbar > .k-align-right {
+  float: none;
+}
+/* line 70, toolbar.less */
+.km-root .k-toolbar > .km-button,
+.km-root .k-toolbar .km-buttongroup,
+.km-root .k-toolbar .k-split-button,
+.km-root .k-toolbar .k-widget,
+.km-root .k-toolbar .km-widget,
+.km-root .k-toolbar .k-textbox,
+.km-root .k-toolbar label,
+.km-root .k-toolbar .k-separator {
+  margin: 0 .4em;
+}
+/* line 82, toolbar.less */
+.km-root .k-toolbar .k-button-icontext .km-icon {
+  margin-left: -0.15em;
+}
+/* line 87, toolbar.less */
+.km-root .k-toolbar .k-split-button {
+  padding-left: 0;
+}
+/* line 92, toolbar.less */
+.km-root .k-toolbar .k-split-button .km-button,
+.km-root .k-toolbar .km-buttongroup .km-group-start {
+  margin: 0;
+}
+/* line 98, toolbar.less */
+.km-root .k-toolbar .k-split-button > .km-button {
+  padding-left: 1em;
+  padding-right: .6em;
+}
+/* line 104, toolbar.less */
+.km-root .k-toolbar .k-split-button .k-split-button-arrow {
+  margin: 0 0 0 -1px;
+  padding-left: .2em;
+  padding-right: .2em;
+}
+/* line 111, toolbar.less */
+.km-root .km-pane .k-toolbar .k-overflow-anchor {
+  border-width: 0;
+  width: 1.5em;
+  height: 100%;
+  margin: 0;
+  font-size: 2.2em;
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+}
+/* line 126, toolbar.less */
+.km-root .k-overflow-anchor span.km-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.5em 0 0 -0.5em;
+}
+/* line 134, toolbar.less */
+.km-root .k-overflow-anchor .km-icon:after,
+.km-root .k-overflow-anchor .km-icon:before {
+  margin-left: 0;
+}
+/* line 140, toolbar.less */
+.km-root .k-overflow-container .k-item {
+  float: none;
+  border: 0;
+}
+/* line 146, toolbar.less */
+.km-root .k-overflow-container .k-overflow-button,
+.km-root .k-split-container .km-button {
+  text-align: left;
+  display: block;
+  white-space: nowrap;
+  margin: 0 0 1px;
+}
+/* line 155, toolbar.less */
+.km-root .k-overflow-container li:last-child .k-overflow-button,
+.km-root .k-split-container li:last-child .km-button {
+  margin: 0;
+}
+/* line 161, toolbar.less */
+.km-root .k-overflow-container .km-buttongroup {
+  padding: 0;
+}
+/* line 166, toolbar.less */
+.km-root .k-overflow-container .km-buttongroup > li {
+  display: block;
+}
+/* line 171, toolbar.less */
+.km-root .k-overflow-container .k-overflow-group {
+  border-width: 1px 0;
+  border-style: solid;
+  border-radius: 0;
+  padding: 1px 0 0;
+  margin: 0 0 1px;
+}
+/* line 180, toolbar.less */
+.km-root .k-overflow-container .km-state-disabled {
+  opacity: 1;
+}
+/* line 185, toolbar.less */
+.km-root .k-overflow-container .k-overflow-hidden {
+  display: none;
+}
+/* line 190, toolbar.less */
+.km-root .k-overflow-container .k-toolbar-first-visible,
+.km-root .k-overflow-container .k-overflow-group + .k-overflow-group {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 198, toolbar.less */
+.km-root .k-overflow-container .k-toolbar-last-visible {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+/* line 204, toolbar.less */
+.km-root .k-overflow-wrapper .km-actionsheet-wrapper .km-actionsheet {
+  overflow: hidden;
+  overflow-y: auto;
+}
+/* line 3, tabstrip.less */
+.km-tabstrip {
+  padding: .4rem .7rem;
+}
+/* line 8, tabstrip.less */
+.km-horizontal .km-tabstrip {
+  padding: .2rem .7rem;
+}
+/* line 13, tabstrip.less */
+.km-tabstrip {
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-align: start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  flex-align: start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -moz-box-pack: start;
+  padding: 0;
+  text-align: center;
+  word-spacing: -1em;
+}
+/* line 24, tabstrip.less */
+.km-tabstrip .km-button {
+  word-spacing: normal;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  vertical-align: bottom;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 32, tabstrip.less */
+  .km-tabstrip {
+    word-spacing: normal;
+    width: 100%;
+  }
+}
+/* line 35, tabstrip.less */
+.km-tabstrip .km-button {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a8a8a8;
+  padding: .4em .8em;
+  border-width: 0;
+  border-color: transparent;
+  background: none;
+  margin: 0;
+  text-align: center;
+}
+/* line 47, tabstrip.less */
+.km-tabstrip .km-button:first-child {
+  border-left: 0;
+}
+/* line 52, tabstrip.less */
+.km-tabstrip .km-button:last-child {
+  border-right: 0;
+}
+/* line 1, switch.less */
+.km-switch input[type=checkbox] {
+  display: none;
+}
+/* line 6, switch.less */
+.km-switch,
+.km-checkbox {
+  text-align: left;
+  font-size: 1rem;
+  display: inline-block;
+  width: 6.4rem;
+  height: 2rem;
+  line-height: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+/* line 19, switch.less */
+.km-switch-wrapper,
+.km-slider-wrapper {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 28, switch.less */
+.km-switch-background,
+.km-slider-background {
+  display: block;
+  margin: 0 1px 1px -5em;
+  height: 100%;
+  width: 200%;
+}
+/* line 37, switch.less */
+.km-switch-container {
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background: transparent;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 50, switch.less */
+.km-checkbox {
+  width: 1.8rem;
+  height: 1.8rem;
+}
+/* line 56, switch.less */
+.km-checkbox-checked:after {
+  content: "\a0";
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 64, switch.less */
+.km-switch-handle {
+  top: 0;
+  left: 0;
+  width: 2.72em;
+  height: 100%;
+  display: inline-block;
+  margin: -1px 0 0 -1px;
+  background-color: #000;
+}
+/* line 75, switch.less */
+.km-switch-label-on,
+.km-switch-label-off {
+  display: block;
+  width: 130%;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: center;
+  position: absolute;
+  text-transform: uppercase;
+}
+/* line 87, switch.less */
+.km-switch-label-off {
+  left: 104%;
+}
+/* line 92, switch.less */
+.km-switch-label-on {
+  left: -134%;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+/* line 98, switch.less */
+.km-list .km-switch {
+  position: absolute;
+  top: 50%;
+  right: .8rem;
+  margin-top: -1rem;
+}
+/* line 1, listview.less */
+.km-listview-link:after {
+  width: .5rem;
+  height: .5rem;
+  content: "\a0";
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: -0.2rem;
+  border-style: solid;
+  border-width: .24rem .24rem 0 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* line 14, listview.less */
+.km-listview-wrapper > ul:not(.km-listview) {
+  margin: 0 auto;
+}
+/* line 19, listview.less */
+.km-list,
+.km-listview {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+/* line 27, listview.less */
+.km-listinset,
+.km-listgroupinset {
+  margin: 1em;
+}
+/* line 33, listview.less */
+.k-ff .km-listinset:after,
+.k-ff .km-listgroupinset:after {
+  display: block;
+  height: 0;
+  content: "\a0";
+}
+/* line 41, listview.less */
+.km-listinset,
+.km-listgroupinset .km-list {
+  overflow: hidden;
+}
+/* line 47, listview.less */
+.km-listview .km-switch {
+  margin-top: -0.95rem;
+  position: absolute;
+  right: .8rem;
+  top: 50%;
+}
+/* line 55, listview.less */
+.km-listview .km-list {
+  text-indent: 0;
+}
+/* line 60, listview.less */
+.km-list > li,
+.km-widget .km-listview-link,
+.km-widget .km-listview-label {
+  margin: 0;
+  display: block;
+  position: relative;
+  list-style-type: none;
+  vertical-align: middle;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: .5em .7em;
+}
+/* line 73, listview.less */
+.km-list > li {
+  line-height: 1.6em;
+  overflow: hidden;
+}
+/* line 79, listview.less */
+.km-virtual-list {
+  position: relative;
+  width: 100%;
+  -webkit-transform: translateZ(0);
+}
+/* line 86, listview.less */
+.km-virtual-list > li {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateZ(0);
+}
+/* line 94, listview.less */
+.km-widget.km-list .km-load-more,
+.km-widget .km-list .km-load-more {
+  border-bottom: 0;
+}
+/* line 100, listview.less */
+.km-list > li > * {
+  line-height: normal;
+}
+/* line 105, listview.less */
+.km-group-title {
+  display: block;
+  font-weight: bold;
+  padding: .2em 0;
+  text-indent: .8em;
+}
+/* line 113, listview.less */
+.km-listgroupinset .km-group-title {
+  margin-top: .65em;
+  line-height: 2em;
+}
+/* line 119, listview.less */
+.km-list:not(.km-virtual-list) > li:first-child {
+  border-top-width: 0;
+}
+/* line 124, listview.less */
+.km-list:not(.km-virtual-list) > li:last-child {
+  border-bottom-width: 0;
+}
+/* line 129, listview.less */
+.km-widget .km-listview-link,
+.km-widget .km-listview-label {
+  line-height: inherit;
+  text-decoration: none;
+  margin: -0.5em -0.7em;
+}
+/* line 137, listview.less */
+.km-listview-link:after,
+.km-listview-label:after {
+  border-color: #777;
+  content: "\a0";
+  display: block;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  margin-top: -0.32rem;
+}
+/* Filtering */
+/* line 151, listview.less */
+.km-filter-form {
+  width: 100%;
+  padding: .5em 0;
+  border: 1px solid transparent;
+  border-width: 1px 0;
+  -webkit-transform: translatez(0);
+  -moz-transform: translatez(0);
+  -ms-transform: translatez(0);
+  -o-transform: translatez(0);
+  transform: translatez(0);
+}
+/* line 160, listview.less */
+.km-filter-wrap {
+  position: relative;
+  margin: 0 .7em;
+  padding: .2em .4em;
+  border: 1px solid transparent;
+}
+/* line 168, listview.less */
+.km-widget .km-filter-wrap:before {
+  display: inline-block;
+  vertical-align: middle;
+  content: "\e0e9";
+  font-size: 1.6em;
+  width: 1em;
+  height: 1em;
+  margin-right: -1em;
+  color: inherit;
+}
+/* line 180, listview.less */
+.km-tablet .km-filter-wrap {
+  max-width: 24em;
+  margin: 0 auto;
+}
+/* line 186, listview.less */
+.km-filter-wrap > input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+/* line 191, listview.less */
+.km-filter-wrap input {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 0;
+  background: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  vertical-align: middle;
+  padding: 0 1.4em;
+}
+/* line 203, listview.less */
+.km-filter-reset {
+  display: inline-block;
+  margin-left: -1.6em;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 1;
+  text-decoration: none;
+  height: 100%;
+}
+/* line 214, listview.less */
+.km-filter-reset .km-clear {
+  font-size: 1.6em;
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+/* line 222, listview.less */
+.km-filter-reset > .km-text {
+  position: absolute;
+  top: -3333px;
+  left: -3333px;
+}
+/* Load more */
+/* line 231, listview.less */
+.km-load-more {
+  display: block;
+  padding: .3em 0 1.2em;
+  height: 3.2em;
+  text-align: center;
+}
+/* Pull to refresh */
+/* line 3, scroller.less */
+.km-scroller-pull {
+  width: 100%;
+  display: block;
+  position: absolute;
+  line-height: 3em;
+  font-size: 1.4em;
+  text-align: center;
+  -webkit-transform: translate3d(0, -3em, 0);
+  -moz-transform: translate3d(0, -3em, 0);
+  -ms-transform: translate3d(0, -3em, 0);
+  -o-transform: translate3d(0, -3em, 0);
+  transform: translate3d(0, -3em, 0);
+}
+/* line 14, scroller.less */
+.km-scroller-pull .km-template {
+  display: inline-block;
+  min-width: 200px;
+  text-align: left;
+}
+/* line 21, scroller.less */
+.km-load-more .km-icon,
+.km-widget .km-scroller-pull .km-icon {
+  display: inline-block;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+  width: 2rem;
+  font-size: 2rem;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: -webkit-transform 300ms linear;
+  -moz-transition: -moz-transform 300ms linear;
+  -ms-transition: -ms-transform 300ms linear;
+  -o-transition: -o-transform 300ms linear;
+  transition: transform 300ms linear;
+}
+/* line 34, scroller.less */
+.km-widget .km-scroller-release .km-icon {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+/* line 39, scroller.less */
+.km-widget .km-scroller-refresh .km-icon {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+/* Scroller */
+/* line 46, scroller.less */
+.km-touch-scrollbar {
+  position: absolute;
+  visibility: hidden;
+  z-index: 200000;
+  height: .4em;
+  width: .4em;
+  background-color: #333;
+  opacity: 0;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  transform-origin: 0 0;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear;
+  -ms-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}
+/* line 59, scroller.less */
+.km-vertical-scrollbar {
+  height: 100%;
+  right: 2px;
+  top: 0;
+}
+/* line 66, scroller.less */
+.km-horizontal-scrollbar {
+  width: 100%;
+  left: 0;
+  bottom: 2px;
+}
+/* line 73, scroller.less */
+.km-scrollview,
+.km-scroll-container {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: -moz-none;
+  -webkit-margin-collapse: separate;
+  margin-collapse: separate;
+}
+/* line 82, scroller.less */
+.km-scroll-wrapper {
+  position: relative;
+}
+/* line 87, scroller.less */
+.km-scroll-header {
+  position: absolute;
+  z-index: 1001;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+/* line 1, scrollview.less */
+.km-scrollview {
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+/* line 9, scrollview.less */
+.km-scrollview > div > * {
+  -webkit-transform: translatez(0);
+}
+/* line 14, scrollview.less */
+.km-scrollview > div > [data-role=page] {
+  vertical-align: top;
+  display: inline-block;
+  min-height: 1px;
+}
+/* line 21, scrollview.less */
+.km-scrollview .km-virtual-page {
+  min-height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
+/* line 30, scrollview.less */
+.k-ff18 .km-scrollview > div,
+.k-ff19 .km-scrollview > div,
+.k-ff20 .km-scrollview > div,
+.k-ff21 .km-scrollview > div {
+  width: 0;
+}
+/* line 38, scrollview.less */
+.km-pages {
+  text-align: center;
+  margin: 0;
+  padding: .6em 0 0;
+  height: 1.5em;
+}
+/* line 46, scrollview.less */
+.km-pages li {
+  display: inline-block;
+  width: .5em;
+  height: .55em;
+  margin: 0 .3em;
+}
+/* PopUp + ActionSheet */
+/* line 3, actionsheet.less */
+.km-root .km-popup .k-item,
+.km-widget.km-actionsheet > li {
+  list-style-type: none;
+  padding: inherit 1em;
+  border-bottom: 1px solid #555;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 12, actionsheet.less */
+.km-widget.km-actionsheet > li {
+  line-height: 2em;
+  border-bottom: 0;
+}
+/* line 18, actionsheet.less */
+.km-widget.km-actionsheet > li > a {
+  line-height: 1.5em;
+  text-align: left;
+  background: transparent;
+}
+/* line 25, actionsheet.less */
+.km-root .km-popup .k-list,
+.km-widget.km-actionsheet {
+  padding: 0;
+  margin: 0;
+}
+/* line 32, actionsheet.less */
+.km-root .km-popup .k-item:last-child,
+.km-widget.km-actionsheet > li:last-child {
+  border: 0;
+}
+/* line 38, actionsheet.less */
+.km-widget.km-actionsheet-wrapper {
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0;
+}
+/* line 45, actionsheet.less */
+.km-actionsheet-root.km-shim .k-animation-container {
+  width: 100% !important;
+  height: 100% !important;
+}
+/* line 51, actionsheet.less */
+.km-tablet .km-pane div.km-actionsheet-phone {
+  background: transparent;
+}
+/* line 56, actionsheet.less */
+.km-tablet .km-actionsheet-phone li.km-actionsheet-title,
+.km-tablet div.km-actionsheet-phone li.km-actionsheet-cancel {
+  display: block;
+}
+/* PopOver */
+/* line 3, popover.less */
+.km-popover-root .km-popup-wrapper {
+  position: relative !important;
+}
+/* line 8, popover.less */
+.km-popup-wrapper,
+.km-modalview-wrapper {
+  z-index: 10001;
+  position: relative;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+/* line 18, popover.less */
+.km-popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+}
+/* line 28, popover.less */
+.km-popup-arrow,
+.km-popup-arrow:after,
+.km-popup-arrow:before {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* line 40, popover.less */
+.km-left .km-popup-arrow,
+.km-right .km-popup-arrow {
+  margin-top: -8px;
+}
+/* line 46, popover.less */
+.km-up .km-popup-arrow,
+.km-down .km-popup-arrow {
+  margin-left: -8px;
+}
+/* line 52, popover.less */
+.km-popup-arrow:after,
+.km-popup-arrow:before {
+  display: block;
+  content: "\a0";
+  width: 0;
+  height: 0;
+}
+/* line 61, popover.less */
+.km-up .km-popup-arrow {
+  top: auto;
+  bottom: 0;
+}
+/* line 67, popover.less */
+.km-left .km-popup-arrow {
+  left: auto;
+  right: 0;
+}
+/* line 73, popover.less */
+.km-popup.km-pane {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 100px;
+  background: transparent;
+}
+/* line 82, popover.less */
+.km-popover-root .km-view {
+  position: relative;
+}
+/* line 87, popover.less */
+.km-popover-root .km-content {
+  -ms-flex: auto;
+}
+/* SplitView */
+/* line 2, splitview.less */
+.km-splitview > .km-content {
+  -moz-box-orient: horizontal;
+  -webkit-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+/* line 9, splitview.less */
+.km-split-vertical > .km-content {
+  -moz-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 15, splitview.less */
+.km-split-content > .km-pane {
+  -moz-box-flex: 2;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+  width: auto;
+  height: auto;
+}
+/* line 22, splitview.less */
+.km-split-content > .km-pane:first-child {
+  -moz-box-flex: 1;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+/* line 27, splitview.less */
+.km-split-horizontal > .km-content > .km-pane {
+  top: 0;
+  bottom: 0;
+}
+/* line 34, splitview.less */
+.km-split-vertical > .km-content > .km-pane > .km-view {
+  display: -webkit-box;
+}
+/* ModalView */
+/* line 3, modalview.less */
+.km-modalview-root {
+  text-align: center;
+}
+/* line 8, modalview.less */
+.km-modalview-root > .k-animation-container {
+  text-align: left;
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  display: inline-block !important;
+  vertical-align: middle;
+}
+/* line 18, modalview.less */
+.km-modalview,
+.km-modalview-wrapper:before {
+  overflow: hidden;
+  position: relative;
+  display: -moz-inline-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  max-height: 100%;
+}
+/* line 30, modalview.less */
+.km-modalview .km-content {
+  box-flex: 1;
+}
+/* line 35, modalview.less */
+.km-auto-height .km-content {
+  -ms-flex: auto;
+}
+/* line 40, modalview.less */
+.km-modalview-root:before,
+.km-modalview-wrapper:before {
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -1px;
+  content: "\a0";
+  width: 0px;
+  display: inline-block;
+}
+/* Drawer */
+/* line 2, drawer.less */
+.km-drawer,
+[data-role=drawer] {
+  top: 0;
+  left: auto;
+  width: 250px;
+}
+/* line 8, drawer.less */
+.km-drawer .km-header,
+.km-drawer .km-footer {
+  z-index: 0;
+}
+/* line 13, drawer.less */
+.km-left-drawer {
+  left: 0;
+}
+/* line 17, drawer.less */
+.km-right-drawer {
+  right: 0;
+}
+/* Forms and icons */
+/* line 3, forms.less */
+.km-item label:before,
+.km-item label.km-item-checked:after {
+  position: absolute;
+  content: " ";
+  display: block;
+  top: 50%;
+  left: .6em;
+  width: 36px;
+  height: 36px;
+  margin-top: -18px;
+}
+/* Slider */
+/* line 18, forms.less */
+.km-widget .k-slider {
+  line-height: .6em;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 27, forms.less */
+.km-widget .k-slider-horizontal {
+  width: 50%;
+  height: .6em;
+  line-height: .6em;
+}
+/* line 34, forms.less */
+.km-list .k-slider {
+  position: absolute;
+  right: 0;
+  margin-top: -0.5em;
+  top: 50%;
+}
+/* line 42, forms.less */
+.km-root .k-slider-track {
+  left: 1em !important;
+  right: 1em;
+  height: 100%;
+  display: block;
+  position: absolute;
+  border: .5em solid transparent;
+  border-width: .5em 0;
+}
+/* line 53, forms.less */
+.km-widget .k-slider-horizontal .k-slider-track {
+  width: auto !important;
+}
+/* line 58, forms.less */
+.km-widget .k-slider .k-slider-track {
+  background-clip: padding-box;
+}
+/* line 63, forms.less */
+.km-widget .k-slider-track,
+.km-widget .k-slider-selection {
+  margin-top: 0;
+  border-radius: 5px;
+  box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+}
+/* line 71, forms.less */
+.km-widget .k-slider-horizontal .k-slider-selection {
+  top: 0;
+  height: 100%;
+}
+/* line 77, forms.less */
+.km-widget .k-slider-items {
+  margin: 0;
+}
+/* line 82, forms.less */
+.km-widget .k-slider .k-draghandle {
+  text-indent: -3333px;
+  left: 0;
+  width: 1.2em;
+  height: 1.2em;
+  display: block;
+  position: absolute;
+}
+/* line 92, forms.less */
+.km-widget .k-slider-tooltip {
+  display: none;
+}
+/* Dialog */
+/* line 99, forms.less */
+.km-dialog {
+  position: absolute;
+  min-width: 19em;
+  max-width: 25em;
+  overflow: hidden;
+}
+/* line 107, forms.less */
+.km-dialog-title {
+  position: static;
+  float: none;
+  height: 2.6em;
+  margin-top: -2.6em;
+  font-size: 1.22em;
+  line-height: 3em;
+}
+/* line 117, forms.less */
+.km-dialog:before {
+  content: "\a0";
+  display: block;
+  overflow: visible;
+  width: 100%;
+  height: 3em;
+  opacity: .2;
+}
+/* line 127, forms.less */
+.km-dialog-content {
+  font-weight: normal;
+  min-height: 2em;
+  text-align: center;
+}
+/* line 134, forms.less */
+.km-dialog .km-button {
+  display: block;
+  margin: .4em;
+  font-size: 1.3em;
+  text-align: center;
+  padding: .44em;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Form elements */
+/* line 146, forms.less */
+.km-list input[type=text]:not(.k-input),
+.km-list input[type=password],
+.km-list input[type=search],
+.km-list input[type=number],
+.km-list input[type=tel],
+.km-list input[type=url],
+.km-list input[type=email],
+.km-list input[type=file],
+.km-list input[type=month],
+.km-list input[type=color],
+.km-list input[type=week],
+.km-list input[type=date],
+.km-list input[type=time],
+.km-list input[type=datetime],
+.km-list input[type=datetime-local],
+.km-list select:not([multiple]),
+.km-list .k-dropdown,
+.km-list textarea {
+  width: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  position: absolute;
+  top: 50%;
+  line-height: normal;
+  z-index: 1;
+  right: 0;
+  margin-top: -1em;
+}
+/* line 176, forms.less */
+.km-widget .k-slider .k-tick,
+.km-widget .k-slider .k-label,
+.km-widget .k-slider .k-button {
+  display: none;
+}
+/* line 183, forms.less */
+.km-list textarea {
+  position: relative;
+  width: -webkit-calc(50% + .7em);
+  width: -moz-calc(50% + .7em);
+  width: calc(50% + .7em);
+  margin-right: -0.7em;
+}
+/* line 192, forms.less */
+.km-list input,
+.km-list select,
+.km-list textarea,
+.km-list input[type=checkbox],
+.km-list input[type=radio] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+/* line 203, forms.less */
+.km-list input[type=checkbox],
+.km-list input[type=radio] {
+  position: absolute;
+  top: 50%;
+  right: .7em;
+  margin-top: -0.5em;
+  background: none;
+}
+/* line 213, forms.less */
+.km-widget input,
+.km-widget textarea {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+/* line 219, forms.less */
+.km-widget input[readonly],
+.km-widget input[type=image],
+.km-widget select:not([multiple]) {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* line 226, forms.less */
+.km-list textarea {
+  top: 0;
+}
+/* line 231, forms.less */
+.km-list .k-dropdown {
+  line-height: 1.4em;
+}
+/* line 236, forms.less */
+.km-list .k-dropdown,
+.km-list .k-dropdown .k-input {
+  background-color: transparent;
+}
+/* line 242, forms.less */
+.km-list .k-dropdown-wrap {
+  display: inline-block;
+}
+/* line 247, forms.less */
+.km-list .km-listview-label:after,
+.km-list input ~ .km-listview-link:after,
+.km-list textarea ~ .km-listview-link:after,
+.km-list select ~ .km-listview-link:after,
+.km-list .k-dropdown ~ .km-listview-link:after {
+  display: none;
+}
+/* line 256, forms.less */
+.km-list .k-dropdown select,
+.km-list .k-dropdown .k-select {
+  display: none;
+}
+/* line 262, forms.less */
+.km-widget .km-list textarea {
+  position: relative;
+  float: right;
+  margin-top: 0;
+  font-family: inherit;
+}
+/* Checkboxes and Radios */
+/* line 272, forms.less */
+.km-listview-label input[type=radio],
+.km-listview-label input[type=checkbox] {
+  border: 0;
+  font-size: inherit;
+  width: 1em;
+  height: .9em;
+}
+/* animation classes */
+/* line 5, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-end .k-fx-next,
+.k-fx-end .k-fx-current {
+  -webkit-transition: all 350ms ease-out;
+  -moz-transition: all 350ms ease-out;
+  -ms-transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+}
+/* line 10, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx {
+  position: relative;
+}
+/* line 13, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx .k-fx-current {
+  z-index: 0;
+}
+/* line 17, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx .k-fx-next {
+  z-index: 1;
+}
+/* line 22, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-hidden,
+.k-fx-hidden * {
+  visibility: hidden !important;
+}
+/* line 27, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-hidden .km-view-title {
+  visibility: visible !important;
+  opacity: 0;
+}
+/* line 34, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-reverse .k-fx-current {
+  z-index: 1;
+}
+/* line 38, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-reverse .k-fx-next {
+  z-index: 0;
+}
+/* Zoom */
+/* line 46, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-zoom.k-fx-start .k-fx-next {
+  -webkit-transform: scale(0) !important;
+  -moz-transform: scale(0) !important;
+  -ms-transform: scale(0) !important;
+  -o-transform: scale(0) !important;
+  transform: scale(0) !important;
+}
+/* line 50, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-zoom.k-fx-end .k-fx-next {
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+/* line 55, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-zoom.k-fx-reverse.k-fx-start .k-fx-next,
+.k-fx-zoom.k-fx-reverse.k-fx-end .k-fx-next {
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+/* line 60, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-zoom.k-fx-reverse.k-fx-start .k-fx-current {
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+/* line 64, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-zoom.k-fx-reverse.k-fx-end .k-fx-current {
+  -webkit-transform: scale(0) !important;
+  -moz-transform: scale(0) !important;
+  -ms-transform: scale(0) !important;
+  -o-transform: scale(0) !important;
+  transform: scale(0) !important;
+}
+/* Fade */
+/* line 72, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-fade.k-fx-start .k-fx-next {
+  will-change: opacity;
+  opacity: 0;
+}
+/* line 77, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-fade.k-fx-end .k-fx-next {
+  opacity: 1;
+}
+/* line 82, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-fade.k-fx-reverse.k-fx-start .k-fx-current {
+  will-change: opacity;
+  opacity: 1;
+}
+/* line 87, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-fade.k-fx-reverse.k-fx-end .k-fx-current {
+  opacity: 0;
+}
+/* Slide */
+/* line 94, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide {
+  /* left */
+  /* left reverse */
+  /* right */
+}
+/* line 95, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-end .k-fx-next .km-content,
+.k-fx-slide.k-fx-end .k-fx-next .km-header,
+.k-fx-slide.k-fx-end .k-fx-next .km-footer,
+.k-fx-slide.k-fx-end .k-fx-current .km-content,
+.k-fx-slide.k-fx-end .k-fx-current .km-header,
+.k-fx-slide.k-fx-end .k-fx-current .km-footer {
+  -webkit-transition: all 350ms ease-out;
+  -moz-transition: all 350ms ease-out;
+  -ms-transition: all 350ms ease-out;
+  -o-transition: all 350ms ease-out;
+  transition: all 350ms ease-out;
+}
+/* line 106, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-start .k-fx-next .km-content {
+  will-change: transform;
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 111, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-start .k-fx-next .km-header,
+.k-fx-slide.k-fx-start .k-fx-next .km-footer {
+  will-change: opacity;
+  opacity: 0;
+}
+/* line 117, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-end .k-fx-current .km-content {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 121, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-end .k-fx-next .km-header,
+.k-fx-slide.k-fx-end .k-fx-next .km-footer {
+  opacity: 1;
+}
+/* line 128, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-start .k-fx-current .km-content {
+  will-change: transform;
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 133, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-end .k-fx-current .km-content {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 137, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-start .k-fx-next .km-content {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 141, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-end .k-fx-next .km-content {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 145, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-start .k-fx-current .km-header,
+.k-fx-slide.k-fx-reverse.k-fx-start .k-fx-current .km-footer {
+  will-change: opacity;
+  opacity: 1;
+}
+/* line 151, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-start .k-fx-next .km-header,
+.k-fx-slide.k-fx-reverse.k-fx-start .k-fx-next .km-footer {
+  opacity: 1;
+}
+/* line 156, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-end .k-fx-current .km-header,
+.k-fx-slide.k-fx-reverse.k-fx-end .k-fx-current .km-footer {
+  opacity: 0;
+}
+/* line 161, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-reverse.k-fx-end .k-fx-next .km-header,
+.k-fx-slide.k-fx-reverse.k-fx-end .k-fx-next .km-footer {
+  opacity: 1;
+}
+/* line 168, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-right {
+  /* right reverse */
+}
+/* line 169, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-right.k-fx-start .k-fx-next .km-content {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 173, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-right.k-fx-end .k-fx-current .km-content {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 179, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-right.k-fx-reverse.k-fx-start .k-fx-current .km-content {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 183, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-right.k-fx-reverse.k-fx-end .k-fx-current .km-content {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 187, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-right.k-fx-reverse.k-fx-start .k-fx-next .km-content {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 191, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-slide.k-fx-right.k-fx-reverse.k-fx-end .k-fx-next .km-content {
+  -webkit-transform: translatex(0%);
+  -moz-transform: translatex(0%);
+  -ms-transform: translatex(0%);
+  -o-transform: translatex(0%);
+  transform: translatex(0%);
+}
+/* Tile */
+/* line 199, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile {
+  /* left */
+  /* left reverse */
+  /* right */
+}
+/* line 201, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-start .k-fx-next {
+  will-change: transform;
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 206, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 212, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-start .k-fx-current {
+  will-change: transform;
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 217, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 221, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-start .k-fx-next {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 225, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-end .k-fx-next {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 231, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right {
+  /* right reverse */
+}
+/* line 232, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-start .k-fx-next {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 236, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 242, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-start .k-fx-current {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 246, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 250, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-start .k-fx-next {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 254, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-end .k-fx-next {
+  -webkit-transform: translatex(0%);
+  -moz-transform: translatex(0%);
+  -ms-transform: translatex(0%);
+  -o-transform: translatex(0%);
+  transform: translatex(0%);
+}
+/* Tile */
+/* line 262, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile {
+  /* left */
+  /* left reverse */
+  /* right */
+}
+/* line 264, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-start .k-fx-next {
+  will-change: transform;
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 269, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 275, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-start .k-fx-current {
+  will-change: transform;
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 280, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 284, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-start .k-fx-next {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 288, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-reverse.k-fx-end .k-fx-next {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 294, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right {
+  /* right reverse */
+}
+/* line 295, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-start .k-fx-next {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 299, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 305, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-start .k-fx-current {
+  -webkit-transform: translatex(0);
+  -moz-transform: translatex(0);
+  -ms-transform: translatex(0);
+  -o-transform: translatex(0);
+  transform: translatex(0);
+}
+/* line 309, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 313, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-start .k-fx-next {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 317, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx-tile.k-fx-right.k-fx-reverse.k-fx-end .k-fx-next {
+  -webkit-transform: translatex(0%);
+  -moz-transform: translatex(0%);
+  -ms-transform: translatex(0%);
+  -o-transform: translatex(0%);
+  transform: translatex(0%);
+}
+/* Overlay */
+/* line 326, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-start .k-fx-next,
+.k-fx.k-fx-overlay.k-fx-left.k-fx-start .k-fx-next {
+  will-change: transform;
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 332, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-right.k-fx-start .k-fx-next {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 336, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-up.k-fx-start .k-fx-next {
+  -webkit-transform: translatey(100%);
+  -moz-transform: translatey(100%);
+  -ms-transform: translatey(100%);
+  -o-transform: translatey(100%);
+  transform: translatey(100%);
+}
+/* line 340, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-down.k-fx-start .k-fx-next {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+}
+/* line 345, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-reverse.k-fx-start .k-fx-next {
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+/* line 349, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-reverse.k-fx-start .k-fx-current {
+  will-change: transform;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+/* line 354, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-reverse.k-fx-end .k-fx-current,
+.k-fx.k-fx-overlay.k-fx-reverse.k-fx-left.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(100%);
+  -moz-transform: translatex(100%);
+  -ms-transform: translatex(100%);
+  -o-transform: translatex(100%);
+  transform: translatex(100%);
+}
+/* line 359, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-reverse.k-fx-right.k-fx-end .k-fx-current {
+  -webkit-transform: translatex(-100%);
+  -moz-transform: translatex(-100%);
+  -ms-transform: translatex(-100%);
+  -o-transform: translatex(-100%);
+  transform: translatex(-100%);
+}
+/* line 363, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-reverse.k-fx-up.k-fx-end .k-fx-current {
+  -webkit-transform: translatey(100%);
+  -moz-transform: translatey(100%);
+  -ms-transform: translatey(100%);
+  -o-transform: translatey(100%);
+  transform: translatey(100%);
+}
+/* line 367, C:\Users\muratcan\Source\Workspaces\MovieConnections\MovieConnections\Areas\Dashboard\Assets\vendor\kendo.ui\css\common\transitions.less */
+.k-fx.k-fx-overlay.k-fx-reverse.k-fx-down.k-fx-end .k-fx-current {
+  -webkit-transform: translatey(-100%);
+  -moz-transform: translatey(-100%);
+  -ms-transform: translatey(-100%);
+  -o-transform: translatey(-100%);
+  transform: translatey(-100%);
+}
+/* Platform specific workarounds */
+/* line 3, workarounds.less */
+.km-on-wp .km-view,
+.km-on-wp .km-header,
+.km-on-wp .km-footer,
+.km-on-wp .km-slider,
+.km-on-wp .km-switch,
+.km-on-wp .km-filter-reset,
+.km-on-wp .km-shim .k-animation-container,
+.km-on-wp .km-scroll-container {
+  transform: translateZ(0);
+}
+/* line 15, workarounds.less */
+.km-ios,
+.km-blackberry,
+.km-on-ios .km-view,
+.km-on-ios .km-header,
+.km-on-ios .km-footer,
+.km-on-ios .km-slider,
+.km-on-ios .km-switch,
+.km-on-ios .km-group-title,
+.km-on-ios .km-filter-reset,
+.km-on-ios .km-shim .k-animation-container,
+.km-on-ios .km-scroll-container,
+.km-on-blackberry .km-view,
+.km-on-blackberry .km-content,
+.km-on-blackberry .km-header,
+.km-on-blackberry .km-footer,
+.km-on-blackberry .km-icon,
+.km-on-blackberry .km-switch,
+.km-on-blackberry .km-popup .k-item,
+.km-on-blackberry .km-actionsheet-wrapper,
+.km-on-android.km-4 .k-slider {
+  -webkit-transform: translatez(0);
+}
+/* line 40, workarounds.less */
+.km-on-android.km-4 .km-switch,
+.km-on-android.km-4 .km-listview-wrapper,
+.km-on-android.km-4 .km-content,
+.km-on-android.km-4 .km-switch-handle,
+.km-android.km-4.km-on-android .km-switch-wrapper,
+.km-on-android.km-4 .km-scroll-container,
+.km-on-meego .km-content,
+.km-on-meego .km-switch,
+.km-on-meego .km-icon,
+.km-on-meego .km-header,
+.km-on-meego .km-footer,
+.km-on-meego .km-content,
+.km-on-meego .km-switch-handle,
+.km-on-meego .km-switch-wrapper {
+  -webkit-transform: translatez(0);
+  -webkit-backface-visibility: hidden;
+}
+/* line 60, workarounds.less */
+.km-android4.km-ios-chrome .km-listview-wrapper {
+  -webkit-transform: none;
+}
+/* line 65, workarounds.less */
+.km-native-scrolling .km-header,
+.km-native-scrolling .km-footer,
+.km-native-scrolling .km-shim,
+.km-native-scrolling .km-popup-overlay,
+.km-native-scrolling .km-drawer,
+.km-native-scrolling > .km-pane > .km-loader,
+.km-on-android.km-4 .km-scroller-pull .km-icon {
+  -webkit-backface-visibility: hidden;
+}
+/* line 77, workarounds.less */
+.km-on-android.km-4 input {
+  -webkit-user-modify: read-write-plaintext-only;
+}
+/* line 82, workarounds.less */
+.km-wp .km-view .km-absolute,
+.km-meego .km-view .km-absolute {
+  position: absolute;
+}
+/*# sourceMappingURL=all.css.map */

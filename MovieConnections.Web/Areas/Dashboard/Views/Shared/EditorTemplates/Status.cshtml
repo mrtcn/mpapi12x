@@ -1,0 +1,10 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+@model Status
+    
+@{
+    var labelText = ViewData["label"].ToString();
+    var value = ViewData["value"].ToString().ToLower() == "active" ? true : false;
+}
+
+@Html.CheckBox("Status", value, new {@type = "checkbox"})
+@Html.Label(labelText, new {@id = "checkbox-label"})

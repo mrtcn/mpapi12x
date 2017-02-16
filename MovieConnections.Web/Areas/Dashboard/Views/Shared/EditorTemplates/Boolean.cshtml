@@ -1,0 +1,8 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+@model bool
+@{
+    var labelText = Convert.ToString(ViewData["value"]);
+}
+
+@Html.CheckBoxFor(x => x, new {type = "checkbox"})
+@Html.Label(labelText, new {@id = "checkbox-label"})

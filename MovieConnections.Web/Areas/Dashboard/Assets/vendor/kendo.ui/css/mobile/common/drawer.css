@@ -1,0 +1,22 @@
+/* Drawer */
+/* line 2, drawer.less */
+.km-drawer,
+[data-role=drawer] {
+  top: 0;
+  left: auto;
+  width: 250px;
+}
+/* line 8, drawer.less */
+.km-drawer .km-header,
+.km-drawer .km-footer {
+  z-index: 0;
+}
+/* line 13, drawer.less */
+.km-left-drawer {
+  left: 0;
+}
+/* line 17, drawer.less */
+.km-right-drawer {
+  right: 0;
+}
+/*# sourceMappingURL=drawer.css.map */

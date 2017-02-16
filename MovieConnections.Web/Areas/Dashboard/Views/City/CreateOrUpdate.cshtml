@@ -1,0 +1,68 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+@model MovieConnections.Web.Areas.Dashboard.ViewModel.CityViewModel
+
+    @using(Html.BeginForm("CreateOrUpdate", ControllerName, FormMethod.Post, new { @class="form-horizontal", data_validate="true", enctype="multipart/form-data"})) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <div class="col-md-3  pull-right">
+                @Html.DropDownListFor(x => x.RelatedEntityId, Model.CulturedCitySelectList, "Seçiniz", new {@class = "form-control input-sm"})
+            </div>
+            <label class="col-md-3 control-label pull-right">İçerik Seçiniz</label>
+        </div>
+
+        <div id="tabstrip">
+            <ul>
+                <li class="k-state-active">Genel İçerik</li>
+                <li>Dil'e Özel</li>
+            </ul>
+            <div class="general-content">
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Nüfus Yoğun mu</label>
+                    <div class="col-md-1">
+                        @Html.EditorFor(x => x.IsOverpopulated, new {value = "Yoğun"})
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Durum</label>
+                    <div class="col-md-1">
+                        @Html.EditorFor(x => x.Status, new {value = Model.Status, label = "Durum"})
+                    </div>
+                </div>
+
+            </div>
+            <div class="cultured-content">
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Şehir İsmi *</label>
+                    <div class="col-md-4">
+                        @Html.TextBoxFor(x => x.Name, new {@class = "form-control input-sm", data_rule_required = "true", maxlength = 50})
+                        @Html.CustomValidationMessageFor(x => x.Name)
+                    </div>
+                </div>
+
+                @Html.Partial("~/Areas/Dashboard/Views/Shared/Partials/_SeoGroup.cshtml", Model);
+
+                @Html.FormSubmitGroup()
+                @Html.HiddenFor(x => x.Id)
+                @Html.HiddenFor(x => x.BaseEntityId)
+
+            </div>
+        </div>
+        
+        @section scripts{
+
+            <script>
+                $("#tabstrip").kendoTabStrip({
+                    animation: {
+                        close: {
+                            duration: 200,
+                            effects: "fadeOut"
+                        }
+                    }
+                });
+            </script>
+        }
+}

@@ -1,0 +1,29 @@
+﻿@model DateTime?
+@{
+    var isRequired = ViewData["isRequired"];
+    var onlyDate = ViewData["onlyDate"] != null && Convert.ToBoolean(ViewData["onlyDate"]);
+    var onlyYear = ViewData["onlyYear"] != null && Convert.ToBoolean(ViewData["onlyYear"]);
+    var disabled = ViewData["disabled"] != null && Convert.ToBoolean(ViewData["disabled"]);
+
+    var attributes = new Dictionary<string, object>();
+
+    attributes.Add("class", "form-control input-sm");
+    attributes.Add("data-rule-required", isRequired == null || Convert.ToBoolean(isRequired) ? "true" : "false");
+    attributes.Add("data-enddate-target", ViewData["endDateInputId"]);
+
+    if (disabled)
+    {
+        attributes.Add("disabled", "disabled");
+    }
+}
+
+@Html.TextBoxFor(x => x, onlyDate ? "{0:dd.MM.yyyy}" : "{0:dd.MM.yyyy HH:mm}", attributes)
+
+<script>
+    $(document).ready(function () {
+        
+        @(onlyDate ? Html.Raw("$('#" + Html.IdFor(x => x) + "').kendoDatePicker({format: \"dd.MM.yyyy\"});") : onlyYear 
+        ? Html.Raw("$('#" + Html.IdFor(x => x) + "').kendoDatePicker({start: \"decade\",depth: \"decade\",format: \"yyyy\"});") 
+        : Html.Raw("$('#" + Html.IdFor(x => x) + "').kendoDateTimePicker());"))
+    });
+</script>

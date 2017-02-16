@@ -1,0 +1,29 @@
+/* Notification */
+/* line 3, notification.less */
+.k-notification-wrap {
+  padding: .6em .5em;
+  cursor: default;
+  position: relative;
+  white-space: nowrap;
+}
+/* line 11, notification.less */
+.k-notification-button .k-notification-wrap {
+  padding-right: 20px;
+}
+/* line 16, notification.less */
+.k-notification-wrap > .k-i-note {
+  vertical-align: text-bottom;
+  margin-right: 4px;
+}
+/* line 22, notification.less */
+.k-notification-wrap > .k-i-close {
+  position: absolute;
+  top: 7px;
+  right: 4px;
+  display: none;
+}
+/* line 30, notification.less */
+.k-notification-button .k-notification-wrap > .k-i-close {
+  display: block;
+}
+/*# sourceMappingURL=notification.css.map */

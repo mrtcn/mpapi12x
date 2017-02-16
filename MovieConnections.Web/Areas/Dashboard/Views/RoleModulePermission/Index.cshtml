@@ -1,0 +1,20 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+<div class="row">
+    <div class="col-md-12">
+        <div id="grid"
+             data-role="extendedgrid"
+             data-controllername="roleModulePermission"
+             data-create="false"
+             data-create-url="/dashboard/roleModulePermission/create"
+             data-edit="false"
+             data-update-url="/dashboard/roleModulePermission/update"
+             data-delete="false"
+             data-remove-url="/dashboard/roleModulePermission/remove"
+             data-export="false"
+             data-read-url="/dashboard/roleModulePermission/list">            
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Areas/Dashboard/Assets/dist/js/dashboard/role-module-permission.js"></script>
+}

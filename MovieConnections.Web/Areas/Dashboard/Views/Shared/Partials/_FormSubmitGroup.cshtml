@@ -1,0 +1,9 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+@model string
+
+<div class="form-group">
+    <div class="col-md-10 col-md-offset-2">
+        <a type="button" class="btn btn-default btn-sm" href="@Url.Action("Index", ControllerName)">İptal</a>
+        <button type="submit" class="btn btn-primary btn-sm">@Model</button>
+    </div>
+</div>

@@ -1,0 +1,1844 @@
+/* Widget Base Styles */
+/* Hover State */
+/* Selects, Dropdowns */
+/* Buttons */
+/* Group Base Styles */
+/* Content */
+/* Notification */
+/* Slider */
+/* Scheduler */
+/* Upload */
+/* Gantt*/
+/* Border Radii */
+/* Headers */
+/*Focused State*/
+/* Kendo skin */
+/* line 134, theme-template.less */
+.k-in,
+.k-item,
+.k-window-action {
+  border-color: transparent;
+}
+/* main colors */
+/* line 142, theme-template.less */
+.k-block,
+.k-widget {
+  background-color: #ffffff;
+}
+/* line 148, theme-template.less */
+.k-block,
+.k-widget,
+.k-input,
+.k-textbox,
+.k-group,
+.k-content,
+.k-header,
+.k-filter-row > th,
+.k-editable-area,
+.k-separator,
+.k-colorpicker .k-i-arrow-s,
+.k-textbox > input,
+.k-autocomplete,
+.k-dropdown-wrap,
+.k-toolbar,
+.k-group-footer td,
+.k-grid-footer,
+.k-footer-template td,
+.k-state-default,
+.k-state-default .k-select,
+.k-state-disabled,
+.k-grid-header,
+.k-grid-header-wrap,
+.k-grid-header-locked,
+.k-grid-footer-locked,
+.k-grid-content-locked,
+.k-grid td,
+.k-grid td.k-state-selected,
+.k-grid-footer-wrap,
+.k-pager-wrap,
+.k-pager-wrap .k-link,
+.k-pager-refresh,
+.k-grouping-header,
+.k-grouping-header .k-group-indicator,
+.k-panelbar > .k-item > .k-link,
+.k-panel > .k-item > .k-link,
+.k-panelbar .k-panel,
+.k-panelbar .k-content,
+.k-treemap-tile,
+.k-calendar th,
+.k-slider-track,
+.k-splitbar,
+.k-dropzone-active,
+.k-tiles,
+.k-toolbar,
+.k-tooltip,
+.k-button-group .k-tool,
+.k-upload-files {
+  border-color: #cdcdcd;
+}
+/* line 200, theme-template.less */
+.k-group,
+.k-toolbar,
+.k-grouping-header,
+.k-pager-wrap,
+.k-group-footer td,
+.k-grid-footer,
+.k-footer-template td,
+.k-widget .k-status,
+.k-calendar th,
+.k-dropzone-hovered,
+.k-widget.k-popup {
+  background-color: #2a3542;
+}
+/* line 215, theme-template.less */
+.k-grouping-row td,
+td.k-group-cell,
+.k-resize-handle-inner {
+  background-color: #2a3542;
+}
+/* line 222, theme-template.less */
+.k-list-container {
+  border-color: #2a3542;
+  background-color: #2a3542;
+}
+/* line 228, theme-template.less */
+.k-content,
+.k-editable-area,
+.k-panelbar > li.k-item,
+.k-panel > li.k-item,
+.k-tiles {
+  background-color: #ffffff;
+}
+/* line 237, theme-template.less */
+.k-alt,
+.k-separator,
+.k-pivot-layout > tbody > tr:first-child > td:first-child {
+  background-color: #f5f5f5;
+}
+/* line 244, theme-template.less */
+.k-pivot-rowheaders .k-alt .k-alt,
+.k-header.k-alt {
+  background-color: #e1e1e1;
+}
+/* line 250, theme-template.less */
+.k-textbox,
+.k-autocomplete.k-header,
+.k-dropdown-wrap.k-state-active,
+.k-picker-wrap.k-state-active,
+.k-numeric-wrap.k-state-active {
+  border-color: #cdcdcd;
+  background-color: #2a3542;
+}
+/* line 260, theme-template.less */
+.k-textbox > input,
+.k-autocomplete .k-input,
+.k-dropdown-wrap .k-input,
+.k-autocomplete.k-state-focused .k-input,
+.k-dropdown-wrap.k-state-focused .k-input,
+.k-picker-wrap.k-state-focused .k-input,
+.k-numeric-wrap.k-state-focused .k-input {
+  border-color: #cdcdcd;
+}
+/* line 271, theme-template.less */
+input.k-textbox,
+textarea.k-textbox,
+input.k-textbox:hover,
+textarea.k-textbox:hover,
+.k-textbox > input {
+  background: none;
+}
+/* line 280, theme-template.less */
+.k-input,
+input.k-textbox,
+textarea.k-textbox,
+input.k-textbox:hover,
+textarea.k-textbox:hover,
+.k-textbox > input,
+.k-multiselect-wrap {
+  background-color: #ffffff;
+  color: #4c5356;
+}
+/* line 293, theme-template.less */
+.k-input[readonly] {
+  background-color: #ffffff;
+  color: #4c5356;
+}
+/* line 299, theme-template.less */
+.k-block,
+.k-widget,
+.k-popup,
+.k-content,
+.k-toolbar,
+.k-dropdown .k-input {
+  color: #4c5356;
+}
+/* line 309, theme-template.less */
+.k-inverse {
+  color: #ffffff;
+}
+/* line 314, theme-template.less */
+.k-block {
+  color: #ffffff;
+}
+/* line 319, theme-template.less */
+.k-link:link,
+.k-link:visited,
+.k-nav-current.k-state-hover .k-link {
+  color: #ffffff;
+}
+/* line 326, theme-template.less */
+.k-tabstrip-items .k-link,
+.k-panelbar > li > .k-link {
+  color: #4c5356;
+}
+/* line 332, theme-template.less */
+.k-header,
+.k-treemap-title {
+  color: #ffffff;
+}
+/* line 338, theme-template.less */
+.k-header,
+.k-grid-header,
+.k-toolbar,
+.k-dropdown-wrap,
+.k-picker-wrap,
+.k-numeric-wrap,
+.k-grouping-header,
+.k-pager-wrap,
+.k-textbox,
+.k-button,
+.k-progressbar,
+.k-draghandle,
+.k-autocomplete,
+.k-state-highlight,
+.k-tabstrip-items .k-item,
+.k-panelbar .k-tabstrip-items .k-item,
+.km-pane-wrapper > .km-pane > .km-view > .km-content {
+  background-image: none;
+  background-position: 50% 50%;
+  background-color: #2a3542;
+}
+/* line 361, theme-template.less */
+.k-widget.k-tooltip {
+  background-image: none;
+}
+/* line 366, theme-template.less */
+.k-block,
+.k-header,
+.k-grid-header,
+.k-toolbar,
+.k-grouping-header,
+.k-pager-wrap,
+.k-button,
+.k-draghandle,
+.k-treemap-tile,
+html .km-pane-wrapper .k-header {
+  background-color: #2a3542;
+}
+/* icons */
+/* line 381, theme-template.less */
+.k-icon:hover,
+.k-state-hover .k-icon,
+.k-state-selected .k-icon,
+.k-state-focused .k-icon,
+.k-column-menu .k-state-hover .k-sprite,
+.k-column-menu .k-state-active .k-sprite {
+  opacity: 1;
+}
+/* line 391, theme-template.less */
+.k-icon,
+.k-state-disabled .k-icon,
+.k-column-menu .k-sprite {
+  opacity: 1;
+}
+/* line 398, theme-template.less */
+.k-mobile-list .k-check:checked,
+.k-mobile-list .k-edit-field [type=checkbox]:checked,
+.k-mobile-list .k-edit-field [type=radio]:checked {
+  opacity: 1;
+}
+/* line 405, theme-template.less */
+.k-tool {
+  border-color: transparent;
+}
+/* line 410, theme-template.less */
+.k-icon,
+.k-tool-icon,
+.k-grouping-dropclue,
+.k-drop-hint,
+.k-column-menu .k-sprite,
+.k-grid-mobile .k-resize-handle-inner:before,
+.k-grid-mobile .k-resize-handle-inner:after {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/sprite.png');
+  border-color: transparent;
+}
+/* IE will ignore the above selectors if these are added too */
+/* line 423, theme-template.less */
+.k-mobile-list .k-check:checked,
+.k-mobile-list .k-edit-field [type=checkbox]:checked,
+.k-mobile-list .k-edit-field [type=radio]:checked {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/sprite.png');
+  border-color: transparent;
+}
+/* line 431, theme-template.less */
+.k-loading,
+.k-state-hover .k-loading {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/loading.gif');
+  background-position: 50% 50%;
+}
+/* line 438, theme-template.less */
+.k-loading-image {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/loading-image.gif');
+}
+/* line 439, theme-template.less */
+.k-loading-color {
+  background-color: #ffffff;
+}
+/* line 441, theme-template.less */
+.k-button {
+  color: #ffffff;
+  border-color: #2a3542;
+  background-color: #2a3542;
+}
+/* line 448, theme-template.less */
+.k-draghandle {
+  border-color: #2eb3a6;
+  background-color: #2eb3a6;
+  -webkit-box-shadow: 0 0 0 0;
+  box-shadow: 0 0 0 0;
+}
+/* line 455, theme-template.less */
+.k-draghandle:hover {
+  border-color: #ff6c60;
+  background-color: #ff6c60;
+  -webkit-box-shadow: 0 0 0;
+  box-shadow: 0 0 0;
+}
+/* Scheduler */
+/* line 464, theme-template.less */
+.k-scheduler {
+  color: #ffffff;
+  background-color: #ffffff;
+}
+/* line 470, theme-template.less */
+.k-scheduler-layout {
+  color: #4c5356;
+}
+/* line 475, theme-template.less */
+.k-scheduler-datecolumn,
+.k-scheduler-groupcolumn {
+  background-color: #ffffff;
+  color: #4c5356;
+}
+/* line 482, theme-template.less */
+.k-scheduler-times tr,
+.k-scheduler-times th,
+.k-scheduler-table td,
+.k-scheduler-header th,
+.k-scheduler-header-wrap,
+.k-scheduler-times {
+  border-color: #cdcdcd;
+}
+/* line 492, theme-template.less */
+.k-nonwork-hour {
+  background-color: #f4f4f4;
+}
+/* line 497, theme-template.less */
+.k-gantt .k-nonwork-hour {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+/* line 502, theme-template.less */
+.k-gantt .k-header.k-nonwork-hour {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+/* line 507, theme-template.less */
+.k-scheduler-table .k-today,
+.k-today > .k-scheduler-datecolumn,
+.k-today > .k-scheduler-groupcolumn {
+  background-color: #f8f8f8;
+}
+/* line 514, theme-template.less */
+.k-scheduler-now-arrow {
+  border-left-color: #e20000;
+}
+/* line 519, theme-template.less */
+.k-scheduler-now-line {
+  background-color: #e20000;
+}
+/* line 524, theme-template.less */
+.k-event,
+.k-task-complete {
+  border-color: #ff6c60;
+  background: #ff6c60 0 -257px none repeat-x;
+  color: #ffffff;
+}
+/* line 532, theme-template.less */
+.k-event-inverse {
+  color: #4c5356;
+}
+/* line 536, theme-template.less */
+.k-event.k-state-selected {
+  background-position: 0 0;
+}
+/* line 541, theme-template.less */
+.k-ie7 .k-event .k-resize-handle,
+.k-event .k-resize-handle:after,
+.k-ie7 .k-task-single .k-resize-handle,
+.k-task-single .k-resize-handle:after {
+  background-color: #ffffff;
+}
+/* line 549, theme-template.less */
+.k-scheduler-marquee:before,
+.k-scheduler-marquee:after {
+  border-color: #2eb3a6;
+}
+/* line 555, theme-template.less */
+.k-panelbar .k-content,
+.k-panelbar .k-panel,
+.k-panelbar .k-item {
+  background-color: #2a3542;
+  color: #ffffff;
+  border-color: #63656a;
+}
+/* line 564, theme-template.less */
+.k-panelbar > li > .k-link {
+  color: #ffffff;
+}
+/* line 569, theme-template.less */
+.k-panelbar > .k-item > .k-link {
+  border-color: #63656a;
+}
+/* line 574, theme-template.less */
+.k-panel > li.k-item {
+  background-color: #2a3542;
+}
+/* states */
+/* line 580, theme-template.less */
+.k-state-active,
+.k-state-active:hover,
+.k-active-filter,
+.k-tabstrip .k-state-active {
+  background-color: #2eb3a6;
+  border-color: #2eb3a6;
+  color: #ffffff;
+}
+/* line 590, theme-template.less */
+.k-fieldselector .k-list-container {
+  background-color: #2eb3a6;
+}
+/* line 595, theme-template.less */
+.k-button:focus,
+.k-button.k-state-focused {
+  border-color: #0d9285;
+}
+/* line 601, theme-template.less */
+.k-button:hover,
+.k-button.k-state-hover {
+  color: #ffffff;
+  border-color: #ff6c60;
+  background-color: #ff6c60;
+}
+/* line 609, theme-template.less */
+.k-button:active,
+.k-button.k-state-active {
+  color: #ffffff;
+  background-color: #2eb3a6;
+  border-color: #2eb3a6;
+}
+/* line 617, theme-template.less */
+.k-button:active:hover,
+.k-button.k-state-active:hover {
+  color: #ffffff;
+  border-color: #ff6c60;
+  background-color: #ff6c60;
+}
+/* line 625, theme-template.less */
+.k-button[disabled],
+.k-button.k-state-disabled,
+.k-state-disabled .k-button,
+.k-state-disabled .k-button:hover,
+.k-button.k-state-disabled:hover,
+.k-state-disabled .k-button:active,
+.k-button.k-state-disabled:active {
+  color: #c1c1c1;
+  border-color: #cdcdcd;
+  background-color: #f4f4f4;
+  background-image: none;
+}
+/* line 639, theme-template.less */
+.k-button:focus:not(.k-state-disabled):not([disabled]) {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 644, theme-template.less */
+.k-button:focus:active:not(.k-state-disabled):not([disabled]) {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 649, theme-template.less */
+.k-menu .k-state-hover > .k-state-active {
+  background-color: transparent;
+}
+/* line 654, theme-template.less */
+.k-state-highlight {
+  background: #2eb3a6;
+  color: #ffffff;
+}
+/* line 660, theme-template.less */
+.k-state-focused,
+.k-grouping-row .k-state-focused {
+  border-color: #0d9285;
+}
+/* line 666, theme-template.less */
+.k-calendar .k-link {
+  color: #4c5356;
+}
+/* line 671, theme-template.less */
+.k-calendar .k-footer {
+  padding: 0;
+}
+/* line 676, theme-template.less */
+.k-calendar .k-footer .k-nav-today {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #2a3542;
+}
+/* line 683, theme-template.less */
+.k-calendar .k-footer .k-nav-today:hover,
+.k-calendar .k-footer .k-nav-today.k-state-hover {
+  background-color: #ff6c60;
+  text-decoration: none;
+}
+/* line 690, theme-template.less */
+.k-calendar .k-footer .k-nav-today:active {
+  background-color: #2eb3a6;
+}
+/* line 695, theme-template.less */
+.k-calendar .k-link.k-nav-fast {
+  color: #ffffff;
+}
+/* line 700, theme-template.less */
+.k-calendar .k-nav-fast.k-state-hover {
+  text-decoration: underline;
+  background-color: #2a3542;
+  color: #ffffff;
+}
+/* line 707, theme-template.less */
+.k-calendar .k-link.k-state-hover,
+.k-window-titlebar .k-link {
+  border-radius: 13px;
+}
+/* line 713, theme-template.less */
+.k-calendar .k-footer .k-link {
+  border-radius: 0;
+}
+/* line 718, theme-template.less */
+.k-calendar th {
+  background-color: #ffffff;
+}
+/* line 723, theme-template.less */
+.k-calendar-container.k-group {
+  border-color: #2a3542;
+}
+/* line 728, theme-template.less */
+.k-state-selected,
+.k-state-selected:link,
+.k-state-selected:visited,
+.k-list > .k-state-selected,
+.k-list > .k-state-highlight,
+.k-panel > .k-state-selected,
+.k-ghost-splitbar-vertical,
+.k-ghost-splitbar-horizontal,
+.k-draghandle.k-state-selected:hover,
+.k-scheduler .k-scheduler-toolbar .k-state-selected,
+.k-scheduler .k-today.k-state-selected,
+.k-marquee-color {
+  color: #ffffff;
+  background-color: #2eb3a6;
+  border-color: #2eb3a6;
+}
+/* line 746, theme-template.less */
+.k-marquee-text {
+  color: #ffffff;
+}
+/* line 751, theme-template.less */
+.k-state-focused,
+.k-list > .k-state-focused,
+.k-listview > .k-state-focused,
+.k-grid-header th.k-state-focused,
+td.k-state-focused,
+.k-button.k-state-focused {
+  -webkit-box-shadow: inset 0 0 0 1px #0d9285;
+  box-shadow: inset 0 0 0 1px #0d9285;
+}
+/* line 761, theme-template.less */
+.k-state-focused.k-state-selected,
+.k-list > .k-state-focused.k-state-selected,
+.k-listview > .k-state-focused.k-state-selected,
+td.k-state-focused.k-state-selected {
+  -webkit-box-shadow: inset 0 0 0 1px #0d9285;
+  box-shadow: inset 0 0 0 1px #0d9285;
+}
+/* line 769, theme-template.less */
+.k-ie8 .k-panelbar span.k-state-focused,
+.k-ie8 .k-menu li.k-state-focused,
+.k-ie8 .k-listview > .k-state-focused,
+.k-ie8 .k-grid-header th.k-state-focused,
+.k-ie8 td.k-state-focused,
+.k-ie8 .k-tool.k-state-hover,
+.k-ie8 .k-button:focus,
+.k-ie8 .k-button.k-state-focused,
+.k-ie7 .k-panelbar span.k-state-focused,
+.k-ie7 .k-menu li.k-state-focused,
+.k-ie7 .k-listview > .k-state-focused,
+.k-ie7 .k-grid-header th.k-state-focused,
+.k-ie7 td.k-state-focused,
+.k-ie7 .k-tool.k-state-hover,
+.k-ie7 .k-button:focus,
+.k-ie7 .k-button.k-state-focused {
+  background-color: #ff6c60;
+}
+/* line 790, theme-template.less */
+.k-list > .k-state-selected.k-state-focused {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 795, theme-template.less */
+.k-state-selected > .k-link,
+.k-panelbar > li > .k-state-selected,
+.k-panelbar > li.k-state-default > .k-link.k-state-selected {
+  color: #ffffff;
+}
+/* line 802, theme-template.less */
+.k-state-hover,
+.k-state-hover:hover,
+.k-splitbar-horizontal-hover:hover,
+.k-splitbar-vertical-hover:hover,
+.k-list > .k-state-hover,
+.k-scheduler .k-scheduler-toolbar ul li.k-state-hover,
+.k-pager-wrap .k-link:hover,
+.k-dropdown .k-state-focused,
+.k-filebrowser-dropzone,
+.k-mobile-list .k-item > .k-link:active,
+.k-mobile-list .k-item > .k-label:active,
+.k-mobile-list .k-edit-label.k-check:active,
+.k-mobile-list .k-recur-view .k-check:active {
+  color: #ffffff;
+  background-color: #ff6c60;
+  border-color: #ff6c60;
+}
+/* this selector should be used separately, otherwise old IEs ignore the whole rule */
+/* line 822, theme-template.less */
+.k-mobile-list .k-scheduler-timezones .k-edit-field:nth-child(2):active {
+  color: #ffffff;
+  background-color: #ff6c60;
+  border-color: #ff6c60;
+}
+/* line 829, theme-template.less */
+.k-ie7 .k-window-titlebar .k-state-hover,
+.k-ie8 .k-window-titlebar .k-state-hover {
+  border-color: #ff6c60;
+}
+/* line 835, theme-template.less */
+.k-state-hover > .k-select,
+.k-state-focused > .k-select {
+  border-color: #ff6c60;
+}
+/* line 841, theme-template.less */
+.k-button:hover,
+.k-button.k-state-hover,
+.k-button:focus,
+.k-button.k-state-focused,
+.k-textbox:hover,
+.k-state-hover,
+.k-state-hover:hover,
+.k-pager-wrap .k-link:hover,
+.k-other-month.k-state-hover .k-link,
+div.k-filebrowser-dropzone em,
+.k-draghandle:hover {
+  background-image: none;
+}
+/* line 856, theme-template.less */
+.k-pager-wrap {
+  background-color: #2a3542;
+  color: #ffffff;
+}
+/* line 862, theme-template.less */
+.k-autocomplete.k-state-active,
+.k-picker-wrap.k-state-active,
+.k-numeric-wrap.k-state-active,
+.k-dropdown-wrap.k-state-active,
+.k-state-active,
+.k-state-active:hover,
+.k-state-active > .k-link,
+.k-button:active,
+.k-panelbar > .k-item > .k-state-focused {
+  background-image: none;
+}
+/* line 875, theme-template.less */
+.k-state-selected,
+.k-button:active,
+.k-button.k-state-active,
+.k-draghandle.k-state-selected:hover {
+  background-image: none;
+}
+/* line 883, theme-template.less */
+.k-button:active,
+.k-button.k-state-active,
+.k-draghandle.k-state-selected:hover {
+  background-position: 50% 50%;
+}
+/* line 890, theme-template.less */
+.k-tool-icon {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/sprite.png');
+}
+/* line 895, theme-template.less */
+.k-state-hover > .k-link,
+.k-other-month.k-state-hover .k-link,
+div.k-filebrowser-dropzone em {
+  color: #ffffff;
+}
+/* line 902, theme-template.less */
+.k-autocomplete.k-state-hover,
+.k-autocomplete.k-state-focused,
+.k-picker-wrap.k-state-hover,
+.k-picker-wrap.k-state-focused,
+.k-numeric-wrap.k-state-hover,
+.k-numeric-wrap.k-state-focused,
+.k-dropdown-wrap.k-state-hover,
+.k-dropdown-wrap.k-state-focused {
+  background-color: #ff6c60;
+  background-image: none;
+  background-position: 50% 50%;
+  border-color: #ff6c60;
+}
+/* line 917, theme-template.less */
+.km-pane-wrapper .k-mobile-list input:not([type="checkbox"]):not([type="radio"]),
+.km-pane-wrapper .km-pane .k-mobile-list select:not([multiple]),
+.km-pane-wrapper .k-mobile-list textarea,
+.k-dropdown .k-state-focused .k-input {
+  color: #4c5356;
+}
+/* line 925, theme-template.less */
+.k-dropdown .k-state-hover .k-input {
+  color: #ffffff;
+}
+/* line 930, theme-template.less */
+.k-state-error {
+  border-color: #e20000;
+  background-color: #ffffff;
+  color: #e20000;
+}
+/* line 937, theme-template.less */
+.k-state-disabled {
+  opacity: .7;
+}
+/* line 942, theme-template.less */
+.k-ie7 .k-state-disabled,
+.k-ie8 .k-state-disabled {
+  filter: alpha(opacity=70);
+}
+/* line 948, theme-template.less */
+.k-tile-empty.k-state-selected,
+.k-loading-mask.k-state-selected {
+  border-width: 0;
+  background-image: none;
+  background-color: transparent;
+}
+/* line 955, theme-template.less */
+.k-state-disabled,
+.k-state-disabled .k-link,
+.k-state-disabled .k-button,
+.k-other-month,
+.k-other-month .k-link,
+.k-dropzone em,
+.k-dropzone .k-upload-status,
+.k-tile-empty strong,
+.k-slider .k-draghandle {
+  color: #c1c1c1;
+}
+/* Progressbar */
+/* line 970, theme-template.less */
+.k-progressbar-indeterminate {
+  background: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/indeterminate.gif');
+}
+/* line 975, theme-template.less */
+.k-progressbar-indeterminate .k-progress-status-wrap,
+.k-progressbar-indeterminate .k-state-selected {
+  display: none;
+}
+/* Slider */
+/* line 982, theme-template.less */
+.k-slider-track {
+  background-color: #cdcdcd;
+}
+/* line 987, theme-template.less */
+.k-slider-selection {
+  background-color: #2eb3a6;
+}
+/* line 992, theme-template.less */
+.k-slider-horizontal .k-tick {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/slider-h.gif');
+}
+/* line 997, theme-template.less */
+.k-slider-vertical .k-tick {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/slider-v.gif');
+}
+/* Tooltip */
+/* line 1003, theme-template.less */
+.k-widget.k-tooltip {
+  border-color: #2a3542;
+  background-color: #2a3542;
+  color: #ffffff;
+}
+/* line 1010, theme-template.less */
+.k-widget.k-tooltip-validation {
+  border-color: #ffe13a;
+  background-color: #ffe13a;
+  color: #4c5356;
+}
+/* Bootstrap theme fix */
+/* line 1018, theme-template.less */
+.input-prepend .k-tooltip-validation,
+.input-append .k-tooltip-validation {
+  font-size: 12px;
+  position: relative;
+  top: 3px;
+}
+/* line 1026, theme-template.less */
+.k-callout-n {
+  border-bottom-color: #2a3542;
+}
+/* line 1031, theme-template.less */
+.k-callout-w {
+  border-right-color: #2a3542;
+}
+/* line 1036, theme-template.less */
+.k-callout-s {
+  border-top-color: #2a3542;
+}
+/* line 1041, theme-template.less */
+.k-callout-e {
+  border-left-color: #2a3542;
+}
+/* line 1046, theme-template.less */
+.k-tooltip-validation .k-callout-n {
+  border-bottom-color: #ffe13a;
+}
+/* line 1051, theme-template.less */
+.k-tooltip-validation .k-callout-w {
+  border-right-color: #ffe13a;
+}
+/* line 1056, theme-template.less */
+.k-tooltip-validation .k-callout-s {
+  border-top-color: #ffe13a;
+}
+/* line 1061, theme-template.less */
+.k-tooltip-validation .k-callout-e {
+  border-left-color: #ffe13a;
+}
+/* Splitter */
+/* line 1067, theme-template.less */
+.k-splitbar {
+  background-color: #cdcdcd;
+}
+/* line 1072, theme-template.less */
+.k-restricted-size-vertical,
+.k-restricted-size-horizontal {
+  background-color: #e20000;
+}
+/* Upload */
+/* line 1080, theme-template.less */
+.k-file {
+  background-color: #2eb3a6;
+  border-color: #cdcdcd;
+}
+/* line 1086, theme-template.less */
+.k-file-progress {
+  color: #0066cc;
+}
+/* line 1091, theme-template.less */
+.k-file-progress .k-progress {
+  background-color: #d0f8ff;
+}
+/* line 1096, theme-template.less */
+.k-file-success {
+  color: #28760b;
+}
+/* line 1101, theme-template.less */
+.k-file-success .k-progress {
+  background-color: #ddffd0;
+}
+/* line 1106, theme-template.less */
+.k-file-error {
+  color: #cc0000;
+}
+/* line 1111, theme-template.less */
+.k-file-error .k-progress {
+  background-color: #ffded7;
+}
+/* ImageBrowser */
+/* line 1118, theme-template.less */
+.k-tile {
+  border-color: #ffffff;
+}
+/* line 1123, theme-template.less */
+.k-textbox:hover,
+.k-tiles li.k-state-hover {
+  border-color: #ff6c60;
+}
+/* line 1129, theme-template.less */
+.k-tiles li.k-state-selected {
+  border-color: #2eb3a6;
+}
+/* line 1134, theme-template.less */
+.k-tile .k-folder,
+.k-tile .k-file {
+  background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/imagebrowser.png');
+}
+/* TreeMap */
+/* line 1142, theme-template.less */
+.k-leaf,
+.k-leaf.k-state-hover:hover {
+  color: #fff;
+}
+/* line 1148, theme-template.less */
+.k-leaf.k-inverse,
+.k-leaf.k-inverse.k-state-hover:hover {
+  color: #000;
+}
+/* Shadows */
+/* line 1155, theme-template.less */
+.k-widget,
+.k-button {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1161, theme-template.less */
+.k-slider,
+.k-treeview,
+.k-upload {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1168, theme-template.less */
+.k-state-hover {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1173, theme-template.less */
+.k-autocomplete.k-state-focused,
+.k-dropdown-wrap.k-state-focused,
+.k-picker-wrap.k-state-focused,
+.k-numeric-wrap.k-state-focused {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1181, theme-template.less */
+.k-state-selected {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1186, theme-template.less */
+.k-state-active {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1191, theme-template.less */
+.k-grid td.k-state-selected.k-state-focused {
+  background-color: #31bfb1;
+}
+/* line 1196, theme-template.less */
+.k-popup,
+.k-menu .k-menu-group,
+.k-grid .k-filter-options,
+.k-time-popup,
+.k-datepicker-calendar,
+.k-autocomplete.k-state-border-down,
+.k-autocomplete.k-state-border-up,
+.k-dropdown-wrap.k-state-active,
+.k-picker-wrap.k-state-active,
+.k-multiselect.k-state-focused,
+.k-filebrowser .k-image,
+.k-tooltip {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+/* line 1212, theme-template.less */
+.k-treemap-tile.k-state-hover {
+  -webkit-box-shadow: inset 0 0 0 3px #cdcdcd;
+  box-shadow: inset 0 0 0 3px #cdcdcd;
+}
+/* Window */
+/* line 1219, theme-template.less */
+.k-window {
+  border-color: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.25);
+  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.25);
+  background-color: #ffffff;
+}
+/* line 64, theme-template.less */
+.k-window.k-state-focused {
+  border-color: rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+/* line 1225, theme-template.less */
+.k-window.k-window-maximized,
+.k-window-maximized .k-window-titlebar,
+.k-window-maximized .k-window-content {
+  border-radius: 0;
+}
+/* line 1232, theme-template.less */
+.k-shadow {
+  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+/* line 1237, theme-template.less */
+.k-inset {
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+/* Selection */
+/* line 121, theme-template.less */
+.k-editor-inline ::selection {
+  background-color: #2eb3a6;
+  text-shadow: none;
+  color: #fff;
+}
+/* line 127, theme-template.less */
+.k-editor-inline ::-moz-selection {
+  background-color: #2eb3a6;
+  text-shadow: none;
+  color: #fff;
+}
+/* Notification */
+/* line 1249, theme-template.less */
+.k-notification.k-notification-info {
+  background-color: #e5f5fa;
+  color: #0487c4;
+  border-color: #b7e1f0;
+}
+/* line 1256, theme-template.less */
+.k-notification.k-notification-success {
+  background-color: #eaf7ec;
+  color: #349946;
+  border-color: #c3e8ca;
+}
+/* line 1263, theme-template.less */
+.k-notification.k-notification-warning {
+  background-color: #fff4d9;
+  color: #0487c4;
+  border-color: #fff0c8;
+}
+/* line 1270, theme-template.less */
+.k-notification.k-notification-error {
+  background-color: #ffe0d9;
+  color: #ef470a;
+  border-color: #ffb7a8;
+}
+/* Gantt */
+/* line 1279, theme-template.less */
+.k-treelist {
+  background: #f5f5f5;
+}
+/* line 1284, theme-template.less */
+.k-treelist .k-alt {
+  background-color: #dcdcdc;
+}
+/* line 1289, theme-template.less */
+.k-treelist .k-state-selected,
+.k-treelist .k-state-selected td,
+.k-treelist .k-alt.k-state-selected,
+.k-treelist .k-alt.k-state-selected > td {
+  background-color: #2eb3a6;
+}
+/* line 1297, theme-template.less */
+.k-task-dot:after {
+  background-color: #4c5356;
+  border-color: #4c5356;
+}
+/* line 1303, theme-template.less */
+.k-task-dot:hover:after {
+  background-color: #2eb3a6;
+}
+/* line 1308, theme-template.less */
+.k-task-summary {
+  border-color: #8a9398;
+  background: #8a9398;
+}
+/* line 1314, theme-template.less */
+.k-task-milestone,
+.k-task-summary-complete {
+  border-color: #4c5356;
+  background: #4c5356;
+}
+/* line 1321, theme-template.less */
+.k-state-selected.k-task-summary {
+  border-color: #82dfd6;
+  background: #82dfd6;
+}
+/* line 1327, theme-template.less */
+.k-state-selected.k-task-milestone,
+.k-state-selected .k-task-summary-complete {
+  border-color: #2eb3a6;
+  background: #2eb3a6;
+}
+/* line 1334, theme-template.less */
+.k-task-single {
+  background-color: #ff8d84;
+  border-color: #ff6c60;
+  color: #ffffff;
+}
+/* line 1341, theme-template.less */
+.k-state-selected.k-task-single {
+  border-color: #2eb3a6;
+}
+/* line 1346, theme-template.less */
+.k-line {
+  background-color: #4c5356;
+  color: #4c5356;
+}
+/* line 1352, theme-template.less */
+.k-state-selected.k-line {
+  background-color: #2eb3a6;
+  color: #2eb3a6;
+}
+/* Border radius */
+/* line 1359, theme-template.less */
+.k-block,
+.k-button,
+.k-textbox,
+.k-drag-clue,
+.k-touch-scrollbar,
+.k-window,
+.k-window-titleless .k-window-content,
+.k-window-action,
+.k-inline-block,
+.k-grid .k-filter-options,
+.k-grouping-header .k-group-indicator,
+.k-autocomplete,
+.k-multiselect,
+.k-combobox,
+.k-dropdown,
+.k-dropdown-wrap,
+.k-datepicker,
+.k-timepicker,
+.k-colorpicker,
+.k-datetimepicker,
+.k-notification,
+.k-numerictextbox,
+.k-picker-wrap,
+.k-numeric-wrap,
+.k-colorpicker,
+.k-list-container,
+.k-calendar-container,
+.k-calendar td,
+.k-calendar .k-link,
+.k-treeview .k-in,
+.k-editor-inline,
+.k-tooltip,
+.k-tile,
+.k-slider-track,
+.k-slider-selection,
+.k-upload {
+  border-radius: 3px;
+}
+/* line 1399, theme-template.less */
+.k-tool {
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 1404, theme-template.less */
+.k-tool.k-group-start,
+.k-toolbar .k-split-button .k-button,
+.k-toolbar .k-button-group .k-group-start {
+  border-radius: 3px 0 0 3px;
+}
+/* line 1411, theme-template.less */
+.k-rtl .k-tool.k-group-start {
+  border-radius: 0 3px 3px 0;
+}
+/* line 1416, theme-template.less */
+.k-tool.k-group-end,
+.k-toolbar .k-button-group .k-group-end,
+.k-toolbar .k-split-button .k-split-button-arrow {
+  border-radius: 0 3px 3px 0;
+}
+/* line 1423, theme-template.less */
+.k-rtl .k-tool.k-group-end {
+  border-radius: 3px 0 0 3px;
+}
+/* line 1428, theme-template.less */
+.k-group-start.k-group-end.k-tool {
+  border-radius: 3px;
+}
+/* line 1433, theme-template.less */
+.k-calendar-container.k-state-border-up,
+.k-list-container.k-state-border-up,
+.k-autocomplete.k-state-border-up,
+.k-multiselect.k-state-border-up,
+.k-dropdown-wrap.k-state-border-up,
+.k-picker-wrap.k-state-border-up,
+.k-numeric-wrap.k-state-border-up,
+.k-window-content,
+.k-filter-menu {
+  border-radius: 0 0 3px 3px;
+}
+/* line 1446, theme-template.less */
+.k-autocomplete.k-state-border-up .k-input,
+.k-dropdown-wrap.k-state-border-up .k-input,
+.k-picker-wrap.k-state-border-up .k-input,
+.k-picker-wrap.k-state-border-up .k-selected-color,
+.k-numeric-wrap.k-state-border-up .k-input {
+  border-radius: 0 0 0 3px;
+}
+/* line 1455, theme-template.less */
+.k-multiselect.k-state-border-up .k-multiselect-wrap {
+  border-radius: 0 0 3px 3px;
+}
+/* line 1460, theme-template.less */
+.k-window-titlebar,
+.k-block > .k-header,
+.k-tabstrip-items .k-item,
+.k-panelbar .k-tabstrip-items .k-item,
+.k-tabstrip-items .k-link,
+.k-calendar-container.k-state-border-down,
+.k-list-container.k-state-border-down,
+.k-autocomplete.k-state-border-down,
+.k-multiselect.k-state-border-down,
+.k-dropdown-wrap.k-state-border-down,
+.k-picker-wrap.k-state-border-down,
+.k-numeric-wrap.k-state-border-down {
+  border-radius: 3px 3px 0 0;
+}
+/* line 1476, theme-template.less */
+.k-split-button.k-state-border-down > .k-button {
+  border-radius: 3px 0 0 0;
+}
+/* line 1481, theme-template.less */
+.k-split-button.k-state-border-up > .k-button {
+  border-radius: 0 0 0 3px;
+}
+/* line 1486, theme-template.less */
+.k-split-button.k-state-border-down > .k-split-button-arrow {
+  border-radius: 0 3px 0 0;
+}
+/* line 1491, theme-template.less */
+.k-split-button.k-state-border-up > .k-split-button-arrow {
+  border-radius: 0 0 3px 0;
+}
+/* line 1496, theme-template.less */
+.k-dropdown-wrap .k-input,
+.k-picker-wrap .k-input,
+.k-numeric-wrap .k-input {
+  border-radius: 1.8px 0 0 1.8px;
+}
+/* line 1503, theme-template.less */
+.k-rtl .k-dropdown-wrap .k-input,
+.k-rtl .k-picker-wrap .k-input,
+.k-rtl .k-numeric-wrap .k-input {
+  border-radius: 0 1.8px 1.8px 0;
+}
+/* line 1510, theme-template.less */
+.k-numeric-wrap .k-link {
+  border-radius: 0 1.8px 0 0;
+}
+/* line 1515, theme-template.less */
+.k-numeric-wrap .k-link + .k-link {
+  border-radius: 0 0 1.8px 0;
+}
+/* line 1520, theme-template.less */
+.k-colorpicker .k-selected-color {
+  border-radius: 1.8px 0 0 1.8px;
+}
+/* line 1525, theme-template.less */
+.k-rtl .k-colorpicker .k-selected-color {
+  border-radius: 0 1.8px 1.8px 0;
+}
+/* line 1530, theme-template.less */
+.k-autocomplete.k-state-border-down .k-input {
+  border-radius: 3px 3px 0 0;
+}
+/* line 1535, theme-template.less */
+.k-dropdown-wrap.k-state-border-down .k-input,
+.k-picker-wrap.k-state-border-down .k-input,
+.k-picker-wrap.k-state-border-down .k-selected-color,
+.k-numeric-wrap.k-state-border-down .k-input {
+  border-radius: 3px 0 0 0;
+}
+/* line 1543, theme-template.less */
+.k-numeric-wrap .k-link.k-state-selected {
+  background-color: #2a3542;
+}
+/* line 1548, theme-template.less */
+.k-multiselect.k-state-border-down .k-multiselect-wrap {
+  border-radius: 1.8px 1.8px 0 0;
+}
+/* line 1553, theme-template.less */
+.k-dropdown-wrap .k-select,
+.k-picker-wrap .k-select,
+.k-numeric-wrap .k-select,
+.k-datetimepicker .k-select + .k-select,
+.k-list-container.k-state-border-right {
+  border-radius: 0 3px 3px 0;
+}
+/* line 1562, theme-template.less */
+.k-rtl .k-dropdown-wrap .k-select,
+.k-rtl .k-picker-wrap .k-select,
+.k-rtl .k-numeric-wrap .k-select,
+.k-rtl .k-datetimepicker .k-select + .k-select,
+.k-rtl .k-list-container.k-state-border-right {
+  border-radius: 3px 0 0 3px;
+}
+/* line 1571, theme-template.less */
+.k-numeric-wrap.k-expand-padding .k-input {
+  border-radius: 3px;
+}
+/* line 1576, theme-template.less */
+.k-textbox > input,
+.k-autocomplete .k-input,
+.k-multiselect-wrap {
+  border-radius: 1.8px;
+}
+/* line 1583, theme-template.less */
+.k-list .k-state-hover,
+.k-list .k-state-focused,
+.k-list .k-state-highlight,
+.k-list .k-state-selected,
+.k-fieldselector .k-list .k-item,
+.k-dropzone {
+  border-radius: 2px;
+}
+/* line 1593, theme-template.less */
+.k-slider .k-button,
+.k-grid .k-slider .k-button {
+  border-radius: 13px;
+}
+/* line 1599, theme-template.less */
+.k-draghandle {
+  border-radius: 13px;
+}
+/* line 1604, theme-template.less */
+.k-scheduler-toolbar > ul li:first-child,
+.k-scheduler-toolbar > ul li:first-child .k-link {
+  border-radius: 3px 0 0 3px;
+}
+/* line 1610, theme-template.less */
+.k-rtl .k-scheduler-toolbar > ul li:first-child,
+.k-rtl .k-scheduler-toolbar > ul li:first-child .k-link,
+.km-view.k-popup-edit-form .k-scheduler-toolbar > ul li:last-child,
+.km-view.k-popup-edit-form .k-scheduler-toolbar > ul li:last-child .k-link {
+  border-radius: 0 3px 3px 0;
+}
+/* line 1618, theme-template.less */
+.k-scheduler-phone .k-scheduler-toolbar > ul li.k-nav-today,
+.k-scheduler-phone .k-scheduler-toolbar > ul li.k-nav-today .k-link,
+.k-edit-field > .k-scheduler-navigation {
+  border-radius: 3px;
+}
+/* line 1625, theme-template.less */
+.k-scheduler-toolbar .k-nav-next,
+.k-scheduler-toolbar ul + ul li:last-child,
+.k-scheduler-toolbar .k-nav-next .k-link,
+.k-scheduler-toolbar ul + ul li:last-child .k-link {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 1634, theme-template.less */
+.k-rtl .k-scheduler-toolbar .k-nav-next,
+.k-rtl .k-scheduler-toolbar ul + ul li:last-child,
+.k-rtl .k-scheduler-toolbar .k-nav-next .k-link,
+.k-rtl .k-scheduler-toolbar ul + ul li:last-child .k-link {
+  border-radius: 3px 0 0 3px;
+}
+/* line 1642, theme-template.less */
+.k-scheduler div.k-scheduler-footer ul li,
+.k-scheduler div.k-scheduler-footer .k-link {
+  border-radius: 3px;
+}
+/* line 1648, theme-template.less */
+.k-more-events,
+.k-event,
+.k-task-single,
+.k-task-complete,
+.k-event .k-link {
+  border-radius: 1.8px;
+}
+/* line 1657, theme-template.less */
+.k-scheduler-mobile .k-event {
+  border-radius: 0.8px;
+}
+/* Adaptive Grid */
+/* line 1664, theme-template.less */
+.k-grid-mobile .k-column-active + th.k-header {
+  border-left-color: #4c5356;
+}
+/* line 1669, theme-template.less */
+html .km-pane-wrapper .km-widget,
+.k-ie .km-pane-wrapper .k-widget,
+.k-ie .km-pane-wrapper .k-group,
+.k-ie .km-pane-wrapper .k-content,
+.k-ie .km-pane-wrapper .k-header,
+.k-ie .km-pane-wrapper .k-popup-edit-form .k-edit-field .k-button,
+.km-pane-wrapper .k-mobile-list .k-item,
+.km-pane-wrapper .k-mobile-list .k-edit-label,
+.km-pane-wrapper .k-mobile-list .k-edit-field {
+  color: #4c5356;
+}
+@media screen and (-ms-high-contrast: active) and (-ms-high-contrast: none) {
+  /* line 1684, theme-template.less */
+  div.km-pane-wrapper a {
+    color: #4c5356;
+  }
+  /* line 1689, theme-template.less */
+  .km-pane-wrapper .k-icon {
+    background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/sprite_2x.png');
+    background-size: 21.2em 21em;
+  }
+}
+/* line 1696, theme-template.less */
+.km-pane-wrapper .k-mobile-list .k-item,
+.km-pane-wrapper .k-mobile-list .k-edit-field,
+.km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-field .k-check {
+  background-color: #ffffff;
+  border-top: 1px solid #cdcdcd;
+}
+/* line 1704, theme-template.less */
+.km-pane-wrapper .k-mobile-list .k-edit-field textarea {
+  outline-width: 0;
+}
+/* line 1709, theme-template.less */
+.km-pane-wrapper .k-mobile-list .k-item.k-state-selected {
+  background-color: #2eb3a6;
+  border-top-color: #2eb3a6;
+}
+/* line 1715, theme-template.less */
+.km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-field .k-check:first-child {
+  border-top-color: transparent;
+}
+/* line 1720, theme-template.less */
+.km-pane-wrapper .k-mobile-list .k-item:last-child {
+  -webkit-box-shadow: inset 0 -1px 0 #cdcdcd;
+  box-shadow: inset 0 -1px 0 #cdcdcd;
+}
+/* line 1725, theme-template.less */
+.km-pane-wrapper .k-mobile-list > ul > li > .k-link,
+.km-pane-wrapper .k-mobile-list .k-recur-view > .k-edit-label:nth-child(3),
+.km-pane-wrapper #recurrence .km-scroll-container > .k-edit-label:first-child {
+  color: #818181;
+}
+/* line 1732, theme-template.less */
+.km-pane-wrapper .k-mobile-list > ul > li > .k-link {
+  border-bottom: 1px solid #cdcdcd;
+}
+/* line 1737, theme-template.less */
+.km-pane-wrapper .k-mobile-list .k-edit-field {
+  -webkit-box-shadow: 0 1px 1px #cdcdcd;
+  box-shadow: 0 1px 1px #cdcdcd;
+}
+/* line 1742, theme-template.less */
+.km-actionsheet .k-grid-delete,
+.km-actionsheet .k-scheduler-delete,
+.km-pane-wrapper .k-scheduler-delete,
+.km-pane-wrapper .k-filter-menu .k-button[type=reset] {
+  color: #fff;
+  border-color: #e20000;
+  background-color: red;
+  background-image: -webkit-gradient(linear, 50% 0, 50% 100%, from(rgba(255,255,255,.3)), to(rgba(255,255,255,.15)));
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,.15));
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,.15));
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,.3), rgba(255,255,255,.15));
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.3), rgba(255,255,255,.15));
+}
+/* line 1757, theme-template.less */
+.km-actionsheet .k-grid-delete:active,
+.km-actionsheet .k-scheduler-delete:active,
+.km-pane-wrapper .k-scheduler-delete:active,
+.km-pane-wrapper .k-filter-menu .k-button[type=reset]:active {
+  background-color: #990000;
+}
+/* /Column Menu */
+/* line 1767, theme-template.less */
+.k-autocomplete.k-state-default,
+.k-picker-wrap.k-state-default,
+.k-numeric-wrap.k-state-default,
+.k-dropdown-wrap.k-state-default {
+  background-image: none;
+  background-position: 50% 50%;
+  background-color: #2eb3a6;
+  border-color: #2eb3a6;
+}
+/* line 1778, theme-template.less */
+.k-autocomplete.k-state-hover,
+.k-picker-wrap.k-state-hover,
+.k-numeric-wrap.k-state-hover,
+.k-dropdown-wrap.k-state-hover {
+  background-color: #ff6c60;
+  background-image: none;
+  background-position: 50% 50%;
+  border-color: #ff6c60;
+}
+/* line 1789, theme-template.less */
+.k-multiselect.k-header {
+  border-color: #2eb3a6;
+}
+/* line 1794, theme-template.less */
+.k-multiselect.k-header.k-state-hover {
+  border-color: #ff6c60;
+}
+/* line 1799, theme-template.less */
+.k-autocomplete.k-state-focused,
+.k-picker-wrap.k-state-focused,
+.k-numeric-wrap.k-state-focused,
+.k-dropdown-wrap.k-state-focused,
+.k-multiselect.k-header.k-state-focused {
+  background-color: #ff6c60;
+  background-image: none;
+  background-position: 50% 50%;
+  border-color: #0d9285;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1812, theme-template.less */
+.k-list-container {
+  color: #ffffff;
+}
+/* line 1817, theme-template.less */
+.k-dropdown .k-input,
+.k-dropdown .k-state-focused .k-input,
+.k-menu .k-popup {
+  color: #ffffff;
+}
+/* line 1824, theme-template.less */
+.k-state-default > .k-select {
+  border-color: #2eb3a6;
+}
+/* line 1829, theme-template.less */
+.k-state-hover > .k-select {
+  border-color: #ff6c60;
+}
+/* line 1834, theme-template.less */
+.k-state-focused > .k-select {
+  border-color: #0d9285;
+}
+/* line 1839, theme-template.less */
+.k-tabstrip-items .k-state-default .k-link,
+.k-panelbar > li.k-state-default > .k-link {
+  color: #ffffff;
+}
+/* line 1845, theme-template.less */
+.k-tabstrip-items .k-state-hover .k-link,
+.k-panelbar > li.k-state-hover > .k-link,
+.k-panelbar > li.k-state-default > .k-link.k-state-hover {
+  color: #ffffff;
+}
+/* line 1852, theme-template.less */
+.k-panelbar .k-state-focused.k-state-hover {
+  background: #ff6c60;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1858, theme-template.less */
+.k-tabstrip-items .k-state-default,
+.k-ie7 .k-tabstrip-items .k-state-default .k-loading {
+  border-color: #2a3542;
+}
+/* line 1864, theme-template.less */
+.k-tabstrip-items .k-state-hover,
+.k-ie7 .k-tabstrip-items .k-state-hover .k-loading {
+  border-color: #ff6c60;
+}
+/* line 1870, theme-template.less */
+.k-tabstrip-items .k-state-active,
+.k-panelbar .k-tabstrip-items .k-state-active,
+.k-ie7 .k-tabstrip-items .k-state-active .k-loading {
+  background-color: #2eb3a6;
+  background-image: none;
+  border-color: #2eb3a6;
+}
+/* line 1879, theme-template.less */
+.k-tabstrip .k-content.k-state-active {
+  background-color: #ffffff;
+  color: #4c5356;
+}
+/* line 1885, theme-template.less */
+.k-menu.k-header,
+.k-menu .k-item {
+  border-color: #2a3542;
+}
+/* line 1891, theme-template.less */
+.k-column-menu,
+.k-column-menu .k-item,
+.k-overflow-container .k-overflow-group {
+  border-color: #63656a;
+}
+/* line 1898, theme-template.less */
+.k-overflow-container .k-overflow-group {
+  box-shadow: inset 0 1px 0 #b0b2b6, 0 1px 0 #b0b2b6;
+}
+/* line 1903, theme-template.less */
+.k-toolbar-first-visible.k-overflow-group,
+.k-overflow-container .k-overflow-group + .k-overflow-group {
+  box-shadow: 0 1px 0 #b0b2b6;
+}
+/* line 1909, theme-template.less */
+.k-toolbar-last-visible.k-overflow-group {
+  box-shadow: inset 0 1px 0 #b0b2b6;
+}
+/* line 1914, theme-template.less */
+.k-column-menu .k-separator {
+  border-color: #63656a;
+  background-color: transparent;
+}
+/* line 1920, theme-template.less */
+.k-menu .k-group {
+  border-color: #2a3542;
+}
+/* line 1925, theme-template.less */
+.k-grid-filter.k-state-active {
+  background-color: #2eb3a6;
+}
+/* line 1930, theme-template.less */
+.k-grouping-row td,
+.k-group-footer td,
+.k-grid-footer td {
+  color: #ffffff;
+  border-color: #63656a;
+  font-weight: bold;
+}
+/* line 1939, theme-template.less */
+.k-grouping-header {
+  color: #ffffff;
+}
+/* line 1944, theme-template.less */
+.k-grid td.k-state-focused {
+  -webkit-box-shadow: inset 0 0 0 1px inset 0 0 0 1px #0d9285;
+  box-shadow: inset 0 0 0 1px inset 0 0 0 1px #0d9285;
+}
+/* line 1950, theme-template.less */
+.k-header,
+.k-grid-header-wrap,
+.k-grid .k-grouping-header,
+.k-grid-header,
+.k-pager-wrap,
+.k-pager-wrap .k-textbox,
+.k-pager-wrap .k-link,
+.k-grouping-header .k-group-indicator,
+.k-gantt-toolbar .k-state-default {
+  border-color: #63656a;
+}
+/* line 1964, theme-template.less */
+.k-primary,
+.k-overflow-container .k-primary {
+  color: #ffffff;
+  border-color: #2eb3a6;
+  background-image: none;
+  background-position: 50% 50%;
+  background-color: #2eb3a6;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1975, theme-template.less */
+.k-primary:focus,
+.k-primary.k-state-focused {
+  color: #ffffff;
+  border-color: #2a3542;
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1984, theme-template.less */
+.k-primary:hover {
+  color: #ffffff;
+  border-color: #ff6c60;
+  background-image: none;
+  background-color: #ff6c60;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1993, theme-template.less */
+.k-primary:focus:active:not(.k-state-disabled):not([disabled]),
+.k-primary:focus:not(.k-state-disabled):not([disabled]) {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 1999, theme-template.less */
+.k-primary:active {
+  color: #ffffff;
+  border-color: #2a3542;
+  background-image: none;
+  background-color: #2a3542;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 2008, theme-template.less */
+.k-primary.k-state-disabled,
+.k-state-disabled .k-primary,
+.k-primary.k-state-disabled:hover,
+.k-state-disabled .k-primary:hover,
+.k-primary.k-state-disabled:hover,
+.k-state-disabled .k-primary:active,
+.k-primary.k-state-disabled:active {
+  color: #c1c1c1;
+  border-color: #cdcdcd;
+  background-color: #f4f4f4;
+  background-image: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+/* line 2024, theme-template.less */
+.k-pager-numbers .k-link,
+.k-treeview .k-in {
+  border-color: transparent;
+}
+/* line 2030, theme-template.less */
+.k-treeview .k-icon,
+.k-scheduler-table .k-icon,
+.k-grid .k-hierarchy-cell .k-icon {
+  background-color: #cdcdcd;
+  border-radius: 13px;
+}
+/* line 2038, theme-template.less */
+.k-scheduler-table .k-state-hover .k-icon {
+  background-color: transparent;
+}
+/* line 2043, theme-template.less */
+.k-button:focus {
+  outline: none;
+}
+/* line 2048, theme-template.less */
+.k-editor .k-tool:focus {
+  outline: 0;
+  border-color: #0d9285;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 2058, theme-template.less */
+  .k-icon:not(.k-loading),
+  .k-grouping-dropclue,
+  .k-drop-hint,
+  .k-callout,
+  .k-tool-icon,
+  .k-state-hover .k-tool-icon,
+  .k-state-active .k-tool-icon,
+  .k-state-active.k-state-hover .k-tool-icon,
+  .k-state-selected .k-tool-icon,
+  .k-state-selected.k-state-hover .k-tool-icon,
+  .k-column-menu .k-sprite,
+  .k-mobile-list .k-check:checked,
+  .k-mobile-list .k-edit-field [type=checkbox]:checked,
+  .k-mobile-list .k-edit-field [type=radio]:checked {
+    background-image: url('/areas/dashboard/assets/vendor/kendo.ui/css/web/Flat/sprite_2x.png');
+    background-size: 340px 336px;
+  }
+  /* line 2075, theme-template.less */
+  .k-dropdown-wrap .k-input,
+  .k-picker-wrap .k-input,
+  .k-numeric-wrap .k-input {
+    border-radius: 1.8px 0 0 1.8px;
+  }
+}
+@media screen and (-ms-high-contrast: active) {
+  /* line 2085, theme-template.less */
+  .k-editor-toolbar-wrap .k-dropdown-wrap.k-state-focused,
+  .k-editor-toolbar-wrap .k-button-group .k-tool:focus {
+    border-color: #fff;
+  }
+}
+/* line 217, kendo.flat.less */
+.k-button-group .k-tool,
+.k-toolbar,
+.k-grid-toolbar .k-button {
+  border-color: #63656a;
+}
+/* line 224, kendo.flat.less */
+.k-grid-toolbar .k-button:hover,
+.k-grid-toolbar .k-button.k-state-hovered {
+  border-color: #ff6c60;
+}
+/* line 230, kendo.flat.less */
+.k-grid-toolbar .k-button:focus,
+.k-grid-toolbar .k-button.k-state-focused {
+  border-color: #0d9285;
+}
+/* line 240, kendo.flat.less */
+.k-grid-toolbar .k-autocomplete,
+.k-grid .k-autocomplete,
+.k-editor-toolbar .k-autocomplete,
+.k-grid-toolbar .k-picker-wrap,
+.k-grid .k-picker-wrap,
+.k-editor-toolbar .k-picker-wrap,
+.k-grid-toolbar .k-numeric-wrap,
+.k-grid .k-numeric-wrap,
+.k-editor-toolbar .k-numeric-wrap,
+.k-grid-toolbar .k-dropdown-wrap,
+.k-grid .k-dropdown-wrap,
+.k-editor-toolbar .k-dropdown-wrap {
+  background-color: #2a3542;
+  background-image: none;
+  background-position: 50% 50%;
+  border-color: #63656a;
+}
+/* line 251, kendo.flat.less */
+.k-grid-toolbar .k-autocomplete.k-state-hover,
+.k-grid .k-autocomplete.k-state-hover,
+.k-editor-toolbar .k-autocomplete.k-state-hover,
+.k-grid-toolbar .k-picker-wrap.k-state-hover,
+.k-grid .k-picker-wrap.k-state-hover,
+.k-editor-toolbar .k-picker-wrap.k-state-hover,
+.k-grid-toolbar .k-numeric-wrap.k-state-hover,
+.k-grid .k-numeric-wrap.k-state-hover,
+.k-editor-toolbar .k-numeric-wrap.k-state-hover,
+.k-grid-toolbar .k-dropdown-wrap.k-state-hover,
+.k-grid .k-dropdown-wrap.k-state-hover,
+.k-editor-toolbar .k-dropdown-wrap.k-state-hover {
+  background-color: #ff6c60;
+  background-image: none;
+  background-position: 50% 50%;
+  border-color: #ff6c60;
+}
+/* line 262, kendo.flat.less */
+.k-grid-toolbar .k-autocomplete.k-state-focused,
+.k-grid .k-autocomplete.k-state-focused,
+.k-editor-toolbar .k-autocomplete.k-state-focused,
+.k-grid-toolbar .k-picker-wrap.k-state-focused,
+.k-grid .k-picker-wrap.k-state-focused,
+.k-editor-toolbar .k-picker-wrap.k-state-focused,
+.k-grid-toolbar .k-numeric-wrap.k-state-focused,
+.k-grid .k-numeric-wrap.k-state-focused,
+.k-editor-toolbar .k-numeric-wrap.k-state-focused,
+.k-grid-toolbar .k-dropdown-wrap.k-state-focused,
+.k-grid .k-dropdown-wrap.k-state-focused,
+.k-editor-toolbar .k-dropdown-wrap.k-state-focused {
+  background-color: #ff6c60;
+  background-image: none;
+  background-position: 50% 50%;
+  border-color: #ff6c60;
+}
+/* line 274, kendo.flat.less */
+.k-popup.k-group {
+  color: #ffffff;
+  border-color: #2a3542;
+}
+/* line 283, kendo.flat.less */
+.k-popup.k-group .k-state-default > .k-select {
+  border-color: #63656a;
+}
+/* line 288, kendo.flat.less */
+.k-popup.k-group .k-state-hover > .k-select {
+  border-color: #ff6c60;
+}
+/* line 293, kendo.flat.less */
+.k-popup.k-group .k-state-focused > .k-select {
+  border-color: #2eb3a6;
+}
+/* line 299, kendo.flat.less */
+.k-grid-toolbar,
+.k-dropdown .k-input,
+.k-dropdown .k-state-focused .k-input,
+.k-menu .k-popup {
+  color: #ffffff;
+}
+/*# sourceMappingURL=kendo.flat.css.map */

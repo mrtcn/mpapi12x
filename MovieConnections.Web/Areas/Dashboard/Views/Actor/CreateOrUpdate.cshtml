@@ -1,0 +1,43 @@
+﻿@model ActorViewModel
+
+    @using(Html.BeginForm("CreateOrUpdate", ControllerName, FormMethod.Post, new { @class="form-horizontal", data_validate="true", enctype="multipart/form-data"})) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Aktörün İsmi *</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control input-sm", data_rule_required = "true", maxlength = 50 })
+                @Html.CustomValidationMessageFor(x => x.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Durum</label>
+            <div class="col-md-1">
+                @Html.EditorFor(x => x.Status, new { value = Model.Status, label = "Durum" })
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="grid"
+                     data-role="extendedgrid"
+                     data-controllername="actor"
+                     data-create="true"
+                     data-create-url="/dashboard/actormovie/create?actorId=@Html.Raw(Model.Id)"
+                     data-edit="true"
+                     data-update-url="/dashboard/actormovie/update?actorId=@Html.Raw(Model.Id)"
+                     data-delete="true"
+                     data-remove-url="/dashboard/actormovie/remove?actorId=@Html.Raw(Model.Id)"
+                     data-export="true"
+                     data-read-url="/dashboard/actormovie/list/@Html.Raw(Model.Id)">
+                </div>
+            </div>
+        </div>
+
+        @Html.FormSubmitGroup()
+        @Html.HiddenFor(x => x.Id)
+    }
+@section scripts{
+    <script src="~/Areas/Dashboard/Assets/dist/js/dashboard/actor-movie.js"></script>
+}

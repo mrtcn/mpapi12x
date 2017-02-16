@@ -1,0 +1,20 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+<div class="row">
+    <div class="col-md-12">
+        <div id="grid"
+             data-role="extendedgrid"
+             data-controllername="userModulePermission"
+             data-create="false"
+             data-create-url="/dashboard/userModulePermission/create"
+             data-edit="false"
+             data-update-url="/dashboard/userModulePermission/update"
+             data-delete="false"
+             data-remove-url="/dashboard/userModulePermission/remove"
+             data-export="false"
+             data-read-url="/dashboard/userModulePermission/list">            
+        </div>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Areas/Dashboard/Assets/dist/js/dashboard/user-module-permission.js"></script>
+}

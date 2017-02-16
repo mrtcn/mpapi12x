@@ -1,0 +1,56 @@
+﻿@using WebViewPage = MovieConnections.Web.Areas.WebViewPage
+@model MovieConnections.Web.Areas.Dashboard.ViewModel.CultureViewModel
+
+    @using(Html.BeginForm("CreateOrUpdate", ControllerName, FormMethod.Post, new { @class="form-horizontal", data_validate="true", enctype="multipart/form-data"})) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Yabancı Dil İsmi *</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.Name, new { @class = "form-control input-sm", data_rule_required = "true", maxlength = 50 })
+                @Html.CustomValidationMessageFor(x => x.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Ülke Bayrağı Ekle</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.FlagImagePath, new { @class = "form-control input-sm", data_rule_required = "true" })
+                @Html.CustomValidationMessageFor(x => x.FlagImagePath)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Dil Kodu *</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.CultureCode, new { @class = "form-control input-sm", data_rule_required = "true", maxlength = 10 })
+                @Html.CustomValidationMessageFor(x => x.CultureCode)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Kısaltma Adı</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.ShortName, new { @class = "form-control input-sm", data_rule_required = "true", maxlength = 5 })
+                @Html.CustomValidationMessageFor(x => x.ShortName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Url</label>
+            <div class="col-md-4">
+                @Html.TextBoxFor(x => x.Url, new { @class = "form-control input-sm", data_rule_required = "true", maxlength = 50 })
+                @Html.CustomValidationMessageFor(x => x.Url)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-md-2 control-label">Varsayılan mı?</label>
+            <div class="col-md-1">
+                @Html.EditorFor(x => x.IsDefault, new { value = "Varsayılan" })
+            </div>
+        </div>
+
+        @Html.FormSubmitGroup()
+        @Html.HiddenFor(x => x.Id)
+    }

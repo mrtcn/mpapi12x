@@ -1,0 +1,87 @@
+/* Tooltip */
+/* line 3, tooltip.less */
+.k-tooltip {
+  position: absolute;
+  z-index: 12000;
+  border-style: solid;
+  border-width: 1px;
+  padding: 4px 5px 4px 6px;
+  background-repeat: repeat-x;
+  min-width: 20px;
+  /*slider tooltip only*/
+  text-align: center;
+  /*slider tooltip only*/
+}
+/* line 16, tooltip.less */
+.k-tooltip-button {
+  text-align: right;
+  height: 0;
+}
+/* line 22, tooltip.less */
+.k-tooltip-content {
+  height: 100%;
+}
+/* line 27, tooltip.less */
+.k-tooltip-closable .k-tooltip-content {
+  padding-right: 20px;
+}
+/* line 32, tooltip.less */
+span.k-tooltip {
+  position: static;
+  display: inline-block;
+  border-width: 1px;
+  padding: 2px 5px 1px 6px;
+}
+/* line 40, tooltip.less */
+.k-invalid-msg {
+  display: none;
+}
+/* line 45, tooltip.less */
+.k-callout {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6px;
+  border-color: transparent;
+}
+/* line 55, tooltip.less */
+.k-callout-n {
+  top: -13px;
+  left: 50%;
+}
+/* line 61, tooltip.less */
+.k-callout-w {
+  top: 50%;
+  left: -13px;
+}
+/* line 67, tooltip.less */
+.k-callout-s {
+  left: 50%;
+  bottom: -13px;
+}
+/* line 73, tooltip.less */
+.k-callout-e {
+  top: 50%;
+  right: -13px;
+}
+/* line 79, tooltip.less */
+.k-slider-tooltip .k-callout-n,
+.k-slider-tooltip .k-callout-s {
+  margin-left: -6px;
+}
+/* line 85, tooltip.less */
+.k-slider-tooltip .k-callout-w,
+.k-slider-tooltip .k-callout-e {
+  margin-top: -6px;
+}
+/* line 91, tooltip.less */
+.k-tooltip-validation .k-warning {
+  vertical-align: text-top;
+  margin-right: 3px;
+}
+/* line 97, tooltip.less */
+.k-tooltip-validation {
+  z-index: 9999;
+}
+/*# sourceMappingURL=tooltip.css.map */
