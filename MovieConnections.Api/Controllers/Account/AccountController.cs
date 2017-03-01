@@ -326,7 +326,13 @@ namespace MovieConnections.Api.Controllers.Account
                 return BadRequest(ModelState);
             }
 
-            var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
+            var user = new ApplicationUser()
+            {
+                UserName = model.UserName,
+                Email = model.Email,
+                FirstName = model.FirstName,
+                LastName = model.LastName
+            };
 
             IdentityResult result = await _applicationUserManager.CreateAsync(user, model.Password);
 
@@ -334,8 +340,7 @@ namespace MovieConnections.Api.Controllers.Account
             {
                 return GetErrorResult(result);
             }
-
-            return Ok();
+            return Ok(true);
         }
 
         // POST api/Account/RegisterExternal
@@ -362,7 +367,7 @@ namespace MovieConnections.Api.Controllers.Account
             {
                 return GetErrorResult(result);
             }
-
+            
             result = await _applicationUserManager.AddLoginAsync(user.Id, info.Login);
             if (!result.Succeeded)
             {
