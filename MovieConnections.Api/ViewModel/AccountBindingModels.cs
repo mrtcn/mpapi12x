@@ -9,6 +9,12 @@ namespace MovieConnections.Api.ViewModel
         public string ExternalAccessToken { get; set; }
     }
 
+    public class AddLoginBindingModel
+    {   [Required]
+        [Display(Name = "Access Token")]
+        public string AccessToken { get; set; }
+    }
+
     public class ChangePasswordBindingModel
     {
         [Required]

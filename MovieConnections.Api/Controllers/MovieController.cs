@@ -1,12 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
 using AutoMapper;
 using Microsoft.AspNet.Identity;
 using MovieConnections.Api.Models;
+using MovieConnections.Api.ViewModel;
 using MovieConnections.Core.EntityParams;
 using MovieConnections.Core.Services;
+using MovieConnections.Core.Services.IdentityServices;
 using MovieConnections.Data.Entities;
 using MovieConnections.Data.Models;
 using Newtonsoft.Json;
@@ -16,6 +21,7 @@ namespace MovieConnections.Api.Controllers
     [AllowAnonymous]
     [RoutePrefix("api/Movie")]
     public class MovieController : ApiController {
+        private readonly ApplicationUserManager _applicationUserManager;
         private readonly IMovieService _movieService;
         private readonly IActorService _actorService;
         private readonly IActorMovieService _actorMovieService;
@@ -27,12 +33,14 @@ namespace MovieConnections.Api.Controllers
             IConnectionPathService connectionPathService, 
             IActorMovieService actorMovieService, 
             ICultureService cultureService, 
-            IActorService actorService) {
+            IActorService actorService, 
+            ApplicationUserManager applicationUserManager) {
             _movieService = movieService;
             _connectionPathService = connectionPathService;
             _actorMovieService = actorMovieService;
             _cultureService = cultureService;
             _actorService = actorService;
+            _applicationUserManager = applicationUserManager;
         }
         [Route("GetMovies"), HttpPost]
         public IHttpActionResult GetMovies(GetMoviesModel model)
@@ -59,9 +67,21 @@ namespace MovieConnections.Api.Controllers
         }
 
         [Route("CheckConnectionPath"), HttpPost]
-        public IHttpActionResult CheckConnectionPath(GetConnectionPathsModel model)
+        public async Task<IHttpActionResult> CheckConnectionPath(GetConnectionPathsModel model)
         {
             var result = _connectionPathService.ConnectionItemCheck(model);
+            if (result)
+            {
+                //add popcorn points
+                var userId = 0;
+                var userIdString = User.Identity.GetUserId();
+                Int32.TryParse(userIdString, out userId);
+                var claims = _applicationUserManager.GetClaimsAsync(userId);
+                var popcorn = claims.Result.FirstOrDefault(x => x.Type == "popcorn");
+                var popcornPoint = popcorn?.Value;
+                _applicationUserManager.RemoveClaim(userId, popcorn);
+                await _applicationUserManager.AddClaimAsync(userId, new Claim("popcorn", popcornPoint + 10));
+            }
             return Ok(result);
         }
 

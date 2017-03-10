@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -18,7 +19,6 @@ using MovieConnections.Data.Models;
 
 namespace MovieConnections.Api.Controllers.Account
 {
-    [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
@@ -48,6 +48,57 @@ namespace MovieConnections.Api.Controllers.Account
         //}
 
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
+
+        public async Task<PopCornViewModel> GetPopcornInfoClaims()
+        {
+            //add popcorn points
+            int userId;
+            var userIdString = User.Identity.GetUserId();
+            Int32.TryParse(userIdString, out userId);
+
+            var claims = await _applicationUserManager.GetClaimsAsync(userId);
+            var popcorn = claims.FirstOrDefault(x => x.Type == "popcorn");
+            var level = claims.FirstOrDefault(x => x.Type == "level");
+
+            int popcornPoint;
+            Int32.TryParse(popcorn?.Value, out popcornPoint);
+            int popcornLevel;
+            Int32.TryParse(level?.Value, out popcornLevel);
+
+            var popcornInfo = new PopCornViewModel(popcornPoint, popcornLevel);
+
+            return popcornInfo;
+        }
+
+        [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
+        [Route("GetPopcornPoints"), HttpPost]
+        public async Task<IHttpActionResult> GetPopcornInfo()
+        {
+            var popcornInfo = GetPopcornInfoClaims();
+            return Ok(popcornInfo);
+        }
+
+        [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
+        [Route("AddPopcorn"), HttpPost]
+        public async Task<IHttpActionResult> AddPopcorn(PopCornViewModel model)
+        {
+            //add popcorn points
+            int userId;
+            var userIdString = User.Identity.GetUserId();
+            Int32.TryParse(userIdString, out userId);
+
+            var claims = _applicationUserManager.GetClaimsAsync(userId);
+            var popcorn = claims.Result.FirstOrDefault(x => x.Type == "popcorn");
+
+            var popcornPoint = popcorn?.Value;
+
+            _applicationUserManager.RemoveClaim(userId, popcorn);
+            await _applicationUserManager.AddClaimAsync(userId, new Claim("popcorn", popcornPoint + model.PopcornPoint));
+
+            var popcornInfo = GetPopcornInfoClaims();
+
+            return Ok(popcornInfo);
+        }
 
         // GET api/Account/UserInfo
         [HostAuthentication(DefaultAuthenticationTypes.ExternalBearer)]
@@ -151,6 +202,50 @@ namespace MovieConnections.Api.Controllers.Account
             return Ok();
         }
 
+        // POST api/Account/AddLogin
+        [Route("AddLogin")]
+        public async Task<IHttpActionResult> AddLogin(AddLoginBindingModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+            Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+
+            AuthenticationTicket ticket = AccessTokenFormat.Unprotect(model.AccessToken);
+
+            if ( ticket?.Identity == null || (ticket.Properties?.ExpiresUtc != null 
+                && ticket.Properties.ExpiresUtc.Value < DateTimeOffset.UtcNow)) {
+                return BadRequest("Login Failure");
+            }            
+
+            var userIdString = ticket.Identity.GetUserId();
+            var userIdInt = 0;
+            var userId = 0;
+            if (Int32.TryParse(userIdString, out userIdInt)) {
+                userId = userIdInt;
+            } else {
+                return BadRequest("Login Failed");
+            }
+
+            LoginData data = LoginData.FromIdentity(ticket.Identity);
+
+            if (data == null)
+            {
+                return BadRequest("The login is already associated with an account.");
+            }
+
+            IdentityResult result = await _applicationUserManager.AddLoginAsync(userId,
+                new UserLoginInfo(data.LoginProvider, data.ProviderKey));
+
+            if (!result.Succeeded)
+            {
+                return GetErrorResult(result);
+            }
+
+            return Ok();
+        }
+        
         // POST api/Account/AddExternalLogin
         [Route("AddExternalLogin")]
         public async Task<IHttpActionResult> AddExternalLogin(AddExternalLoginBindingModel model)
@@ -340,6 +435,13 @@ namespace MovieConnections.Api.Controllers.Account
             {
                 return GetErrorResult(result);
             }
+
+            var identity = await user.GenerateUserIdentityAsync(_applicationUserManager, DefaultAuthenticationTypes.ApplicationCookie);
+            var userIdString = identity.GetUserId();
+            var userId = 0;
+            Int32.TryParse(userIdString, out userId);
+            await _applicationUserManager.AddClaimAsync(userId, new Claim("popcorn", "100"));
+
             return Ok(true);
         }
 
@@ -421,6 +523,54 @@ namespace MovieConnections.Api.Controllers.Account
             }
 
             return null;
+        }
+
+        private class LoginData
+        {
+            public string LoginProvider { get; set; }
+            public string ProviderKey { get; set; }
+            public string UserName { get; set; }
+
+            public IList<Claim> GetClaims()
+            {
+                IList<Claim> claims = new List<Claim>();
+                claims.Add(new Claim(ClaimTypes.NameIdentifier, ProviderKey, null, LoginProvider));
+
+                if (UserName != null)
+                {
+                    claims.Add(new Claim(ClaimTypes.Name, UserName, null, LoginProvider));
+                }
+
+                return claims;
+            }
+
+            public static LoginData FromIdentity(ClaimsIdentity identity)
+            {
+                if (identity == null)
+                {
+                    return null;
+                }
+
+                Claim providerKeyClaim = identity.FindFirst(ClaimTypes.NameIdentifier);
+
+                if (providerKeyClaim == null || String.IsNullOrEmpty(providerKeyClaim.Issuer)
+                    || String.IsNullOrEmpty(providerKeyClaim.Value))
+                {
+                    return null;
+                }
+
+                if (providerKeyClaim.Issuer == ClaimsIdentity.DefaultIssuer)
+                {
+                    return null;
+                }
+
+                return new LoginData
+                {
+                    LoginProvider = providerKeyClaim.Issuer,
+                    ProviderKey = providerKeyClaim.Value,
+                    UserName = identity.FindFirstValue(ClaimTypes.Name)
+                };
+            }
         }
 
         private class ExternalLoginData

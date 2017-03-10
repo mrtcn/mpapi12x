@@ -67,7 +67,7 @@ namespace MovieConnections.Core.Services.IdentityServices
                 return null;
             return PasswordHasher.VerifyHashedPassword(user.PasswordHash, password) 
                 == PasswordVerificationResult.Success ? user : null;
-        }
+        }        
     }
 
     public class ApplicationSignInManager : SignInManager<ApplicationUser, int>
