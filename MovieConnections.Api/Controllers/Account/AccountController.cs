@@ -34,19 +34,6 @@ namespace MovieConnections.Api.Controllers.Account
 
         private const string LocalLoginProvider = "Local";
 
-
-        //public ApplicationUserManager UserManager
-        //{
-        //    get
-        //    {
-        //        return _userManager ?? Request.GetOwinContext().GetUserManager<ApplicationUserManager>();
-        //    }
-        //    private set
-        //    {
-        //        _userManager = value;
-        //    }
-        //}
-
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
 
         public async Task<PopCornViewModel> GetPopcornInfoClaims()
@@ -107,12 +94,54 @@ namespace MovieConnections.Api.Controllers.Account
         {
             ExternalLoginData externalLogin = ExternalLoginData.FromIdentity(User.Identity as ClaimsIdentity);
 
+            var popcornPointInt = GetPopcornPoint();
+            var popcornLevelInt = GetPopcornLevel();
+
+            var user = _applicationUserManager.FindById(User.Identity.GetUserId<int>());
+
             return new UserInfoViewModel
             {
-                Email = User.Identity.GetUserName(),
+                Id = user.Id,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                UserName = user.UserName,
+                Email = user.Email,
+                PopcornPoint = popcornPointInt,
+                Level = popcornLevelInt,
                 HasRegistered = externalLogin == null,
                 LoginProvider = externalLogin != null ? externalLogin.LoginProvider : null
             };
+        }
+
+        private int GetPopcornPoint()
+        {
+            var claims = _applicationUserManager.GetClaimsAsync(User.Identity.GetUserId<int>());
+            var popcorn = claims.Result.FirstOrDefault(x => x.Type == "popcorn");
+            int popcornPointInt;
+            Int32.TryParse(popcorn?.Value, out popcornPointInt);
+            return popcornPointInt;
+        }
+
+        private int GetPopcornLevel()
+        {
+            var claims = _applicationUserManager.GetClaimsAsync(User.Identity.GetUserId<int>());
+            var popcornLevel = claims.Result.FirstOrDefault(x => x.Type == "level");
+            int popcornLevelInt;
+            Int32.TryParse(popcornLevel?.Value, out popcornLevelInt);
+            return popcornLevelInt;
+        }
+
+        [Authorize]
+        public IHttpActionResult UpdateUserInfo(UserInfoViewModel model)
+        {
+            if(model.Id != User.Identity.GetUserId<int>())
+                return BadRequest("Update request failed");
+
+            var user = _applicationUserManager.FindById(User.Identity.GetUserId<int>());
+            AutoMapper.Mapper.Map(model, user);
+            _applicationUserManager.Update(user);
+
+            return Ok(true);
         }
 
         // POST api/Account/Logout

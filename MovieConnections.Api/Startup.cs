@@ -16,10 +16,9 @@ namespace MovieConnections.Api
     public partial class Startup {
         public void Configuration(IAppBuilder app) {
 
-            Mapper.Initialize(cfg =>
-                cfg.CreateMap<ConnectionPath, ConnectionPathParams>());
-            Mapper.Initialize(cfg =>
-                cfg.CreateMap<RegisterViewModel, ApplicationUser>().Ignore());
+            Mapper.Initialize(cfg => cfg.CreateMap<ConnectionPath, ConnectionPathParams>());
+            Mapper.Initialize(cfg => cfg.CreateMap<RegisterViewModel, ApplicationUser>().Ignore());
+            Mapper.Initialize(cfg => cfg.CreateMap<UserInfoViewModel, ApplicationUser>().Ignore());
 
             Mapper.Configuration.AssertConfigurationIsValid();
             HttpConfiguration config = new HttpConfiguration();
